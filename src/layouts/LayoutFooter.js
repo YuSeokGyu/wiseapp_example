@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class LayoutFooter extends Component {
     render() {
         return (
-            <div className="bottom_container">
+            <div id="bottom_container">
                 <div id="bottom_wrapper">
                     <div id="bottom_view">
                         <div id="footer">

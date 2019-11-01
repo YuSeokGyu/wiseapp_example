@@ -1,248 +1,4370 @@
-html,
-body {
+@charset "UTF-8";
+
+html {
     height: 100%;
 }
 
 body {
+    height: 100%;
     display: block;
-    font-family: 'Nanum Gothic';
+    font-family: 'Nanum Gothic', GothamLight;
     font-size: 12px;
     text-align: left;
     font-weight: 100;
     background: #dadfe4;
-}
-/***********  main view   *************/
-#content_view,
-#app_hst_view,
-#bottom_view,
-#banner_view,
-#notice_view,
-#goTop_view,
-#page_header_view {
-    clear: both;
-    width: 1024px;
-    margin: 0 auto;
-    zoom: 1;
-}
 
-#gnb_view {
-    position: relative;
-    z-index: 1900;
-}
-
-#content_view {
-    padding-bottom: 90px;
-}
-
-#bottom_view {
-    position: relative;
-    height: 120px;
-    zoom: 1;
-}
-
-#goTop_view {
-    position: relative;
-    zoom: 1;
-}
-
-#page_header_wrapper {
-    min-height: 40px;
-}
-
-#rank_content_wrapper {
-    background: #ffffff;
-}
-
-#goTop_wrapper {
-    position: fixed;
-    bottom: 104px;
-    right: 0px;
-    z-index: 1800;
-    width: 100%;
-    display: none;
-}
-
-/***********  main view   *************/
-/***********  bottom   *************/
-#bottom_wrapper {
-    position: relative;
-    width: 100%;
-    top: 0;
-    /*background-color: rgba(86,104,127,0.1)*/
-    background-color: #dadfe4;
-}
-
-#bottom_view {
-    #footer {
-        padding-top: 30px;
+    .bold {
+        font-weight: 600;
     }
-}
 
-#bottom_view {
-    #footer {
-        div {
-            vertical-align: bottom;
-        }
+    .normal {
+        font-weight: 100;
     }
-}
 
-#bottom_view {
-    #footer {
-        .ci {
-            float: left;
-            width: 84px;
-            height: 13px;
-            margin: 0px 0px 0px 20px;
-            background-image: url('https://www.wiseapp.co.kr/resources/img/190621/img_logo_footer.png');
-        }
+    .big_font {
+        font-size: 18px;
     }
-}
 
-#bottom_view {
-    #footer {
-        .ci_retail {
-            float: left;
-            width: 105px;
-            height: 13px;
-            margin: 0px 0px 0px 30px;
-            background-image: url('https://www.wiseapp.co.kr/resources/img/190621/img_logo_footer_retail.png');
-        }
+    div.wrapper {
+        position: relative;
+        display: inline-block;
     }
-}
 
-#bottom_view {
-    #footer {
-        .copyright {
-            float: left;
-            margin-top: 1px;
-            padding-left: 26px;
-            color: rgba(86, 104, 127, 0.5);
-        }
+    .hide {
+        display: none;
     }
-}
 
-#bottom_view {
-    #footer {
-        #gnb_view {
-            #menu.sub {
+    .inline {
+        float: left;
+    }
+
+    .inline-r {
+        float: right;
+    }
+
+    .left {
+        text-align: left;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    .dim {
+        opacity: 0.5;
+    }
+
+    .effect_ease {
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    #total_container {
+        position: relative;
+        background: #e9edf0;
+        min-width: 1280px;
+        zoom: 1;
+
+        /*temp*/
+        min-height: 100%;
+    }
+
+    #top_container {
+        position: relative;
+        width: 100%;
+        z-index: 1900;
+    }
+
+    #middle_container {
+        position: relative;
+        width: 100%;
+        zoom: 1;
+
+        /*temp*/
+        padding-bottom: 100px;
+    }
+
+    #bottom_container {
+        width: 100%;
+
+        /*temp*/
+        /*position: relative;*/
+        position: absolute;
+        bottom: 0px;
+    }
+
+    /***********  main view  *************/
+
+    #content_view,
+    #app_hst_view,
+    #bottom_view,
+    #banner_view,
+    #notice_view,
+    #goTop_view,
+    #page_header_view {
+        clear: both;
+        width: 1024px;
+        margin: 0 auto;
+        zoom: 1;
+    }
+
+    #gnb_view {
+        position: relative;
+        z-index: 1900;
+    }
+
+    #content_view {
+        padding-bottom: 90px;
+    }
+
+    #bottom_view {
+        position: relative;
+        height: 120px;
+        zoom: 1;
+    }
+
+    #goTop_view {
+        position: relative;
+        zoom: 1;
+    }
+
+    #page_header_wrapper {
+        min-height: 40px;
+    }
+
+    #rank_content_wrapper {
+        background: #ffffff;
+    }
+
+    #goTop_wrapper {
+        position: fixed;
+        bottom: 104px;
+        right: 0px;
+        z-index: 1800;
+        width: 100%;
+        display: none;
+    }
+
+    /***********  main view   *************/
+
+    /***********  bottom   *************/
+
+    #bottom_wrapper {
+        position: relative;
+        width: 100%;
+        top: 0;
+
+        /*background-color: rgba(86,104,127,0.1)*/
+        background-color: #dadfe4;
+    }
+
+    #bottom_view {
+        #footer {
+            padding-top: 30px;
+
+            div {
+                vertical-align: bottom;
+            }
+
+            .ci {
+                float: left;
+                width: 84px;
+                height: 13px;
+                margin: 0px 0px 0px 20px;
+                background-image: url('https://www.wiseapp.co.kr/resources/img/190621/img_logo_footer.png');
+            }
+
+            .ci_retail {
+                float: left;
+                width: 105px;
+                height: 13px;
+                margin: 0px 0px 0px 30px;
+                background-image: url('https://www.wiseapp.co.kr/resources/img/190621/img_logo_footer_retail.png');
+            }
+
+            .copyright {
+                float: left;
+                margin-top: 1px;
+                padding-left: 26px;
+                color: rgba(86, 104, 127, 0.5);
+            }
+
+            #gnb_view #menu.sub {
                 float: right;
             }
-        }
-    }
-}
 
-#bottom_view {
-    #footer {
-        #footer_menu {
-            display: inline-block;
-            position: absolute;
-            right: 20px;
-            top: 30px;
-        }
-    }
-}
+            #footer_menu {
+                display: inline-block;
+                position: absolute;
+                right: 20px;
+                top: 30px;
 
-#bottom_view {
-    #footer #footer_menu {
-        ul {
-            display: inline-block;
+                ul {
+                    display: inline-block;
+                }
+
+                .item {
+                    color: rgba(86, 104, 127, 0.5);
+                    font-size: 12px;
+                    float: left;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: rgba(86, 104, 127, 0.8);
+                    }
+                }
+            }
         }
 
-        .item {
-            color: rgba(86, 104, 127, 0.5);
-            font-size: 12px;
+        #go_mobile {
             float: left;
+            margin-left: 20px;
+            border: 1px solid #c2c8d0;
+            padding: 2px 5px;
+            display: inline-block;
             cursor: pointer;
 
             &:hover {
-                color: rgba(86, 104, 127, 0.8);
+                border: 1px solid #919eae;
+            }
+
+            .text {
+                float: left;
+                font-size: 11px;
+                color: #56687f;
+                opacity: 0.6;
+                margin-left: 5px;
+                line-height: 14px;
+            }
+
+            &:hover .text {
+                opacity: 0.8;
+            }
+
+            .logo {
+                height: 13px;
+                width: 9px;
+                float: left;
+                background-repeat: no-repeat;
+                background-size: 9px 13px;
+                background-position: center;
+                background-image: url('https://www.wiseapp.co.kr/resources/img/0912/ico_footer_mobile_nor.png');
+            }
+
+            &:hover .logo {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/0912/ico_footer_mobile_pre.png');
+            }
+        }
+
+        #footer {
+            #footer_menu .line {
+                padding: 1.5px 12px 1.5px 12px;
+                cursor: default;
+                float: left;
+
+                div {
+                    width: 1px;
+                    height: 9px;
+                    background-color: rgba(86, 104, 127, 0.5);
+                }
+            }
+
+            #co_info {
+                position: absolute;
+                left: 280px;
+                top: 27px;
+
+                div {
+                    line-height: 19px;
+                    text-align: left;
+                    color: rgba(86, 104, 127, 0.5);
+                }
             }
         }
     }
 
-    #go_mobile {
-        float: left;
-        margin-left: 20px;
-        border: 1px solid #c2c8d0;
-        padding: 2px 5px;
-        display: inline-block;
+    #goTop_view #top {
+        position: absolute;
+
+        /*bottom: 90px;*/
+        bottom: -76px;
+        right: -41px;
+        width: 42px;
+        height: 42px;
+        background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_top_nor.png');
         cursor: pointer;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
 
         &:hover {
-            border: 1px solid #919eae;
+            background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_top_pre.png');
+        }
+    }
+
+    /***********  bottom   *************/
+
+    /***********  loading  *************/
+
+    .loading {
+        position: fixed;
+        overflow: hidden;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9900;
+
+        .panel {
+            background-color: rgba(79, 223, 228, 0.95);
+            width: 240px;
+            height: 160px;
+
+            /*margin: 400px auto 0;*/
+            position: relative;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            text-align: center;
+            background-position: center;
+            z-index: 9900;
+
+            .img {
+                position: absolute;
+                z-index: 9898;
+                width: 50px;
+                height: 50px;
+                top: 50px;
+                left: 100px;
+                background-image: url('https://www.wiseapp.co.kr/resources/img/loading/loading.png');
+            }
+        }
+    }
+
+    /***********  loading  *************/
+
+    /***********  popup  *************/
+
+    .popup {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+
+        /*overflow: hidden;*/
+        overflow-y: auto;
+
+        &.out {
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .panel {
+            background-color: rgba(255, 255, 255, 0.98);
+            min-width: 490px;
+
+            /*min-height: 400px;*/
+            margin: 50px auto;
+            position: relative;
+            -moz-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2);
+
+            .title {
+                line-height: 90px;
+                text-align: center;
+                color: #2c3749;
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    #news_join_view.popup .panel {
+        width: 490px;
+        height: 446px;
+    }
+
+    #terms_view.popup .panel {
+        width: 670px;
+        height: 530px;
+    }
+
+    .popup {
+        &.out .panel {
+            margin: 100px auto 100px;
+            height: 350px;
+        }
+
+        .panel .img {
+            position: relative;
+            width: 490px;
+            height: 6px;
+            background-image: url('https://www.wiseapp.co.kr/resources/img/common/img_news.png');
+        }
+
+        .panel_title {
+            position: relative;
+            height: 86px;
+            overflow: hidden;
+
+            p {
+                margin-top: 38px;
+                margin-left: 40px;
+                overflow: hidden;
+                font-size: 2.5em;
+                color: #2c3749;
+                letter-spacing: -1px;
+            }
+        }
+
+        &.out .panel_title {
+            text-align: center;
+        }
+
+        .btn_close {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            width: 27px;
+            height: 27px;
+            z-index: 4;
+            cursor: pointer;
+            text-indent: -9999em;
+            background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_news_close_nor.png');
+
+            &:hover {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_news_close_pre.png');
+            }
+        }
+
+        #terms_box {
+            background-color: #f4f9fd;
+            width: 586px;
+            height: 376px;
+            margin: 0 auto;
+            overflow-y: auto;
+            padding: 20px;
+            font-size: 12px;
+            color: rgba(44, 55, 73, 0.8);
+            line-height: 20px;
+        }
+
+        &.out .panel_title p {
+            margin-left: 0px;
+        }
+
+        a.close {
+            position: absolute;
+            right: 40px;
+            top: 39.5px;
+            width: 27px;
+            height: 27px;
+            z-index: 4;
+            cursor: pointer;
+            text-indent: -9999em;
+            background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_news_close_nor.png');
+
+            &:hover {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_news_close_pre.png');
+            }
+        }
+
+        .desc {
+            margin-left: 40px;
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 1.166em;
+        }
+
+        .error {
+            margin-left: 40px;
+            color: rgba(255, 0, 0, 0.6);
+            font-size: 1.166em;
+            font-weight: 600;
+        }
+    }
+
+    #news_join_view .error {
+        &.name {
+            position: absolute;
+            right: 55px;
+            top: 189px;
+        }
+
+        &.email {
+            position: absolute;
+            right: 55px;
+            top: 265px;
+        }
+    }
+
+    .popup {
+        .panel_body {
+            padding: 58px 40px 0px 40px;
+        }
+
+        &.out .panel_body {
+            padding: 30px 40px 0px 40px;
+        }
+
+        .form_wrapper {
+            width: 100%;
+            padding: 0 0 26px;
+        }
+
+        input {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+    }
+
+    .popup .form_wrapper input {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        margin-bottom: 14px;
+        padding-left: 34px;
+        padding-right: 34px;
+        padding-top: 0px;
+        border: #e1e1e2 solid 2px;
+        -moz-border-radius: 32px/50%;
+        -webkit-border-radius: 32px/50%;
+        border-radius: 32px/50%;
+        height: 64px;
+        font-size: 1.333em;
+        background-color: #ffffff;
+        outline: none;
+        color: #0099ff;
+
+        &:focus,
+        &.focus {
+            border: #47b5ff solid 2px;
+        }
+
+        &::-webkit-input-placeholder {
+            font-family: 'Nanum Gothic', sans-serif;
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 14px;
+            padding-top: 2px;
+        }
+
+        &::-moz-placeholder {
+            font-family: 'Nanum Gothic', sans-serif;
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 14px;
+            padding-top: 2px;
+            font-family: 'Nanum Gothic', sans-serif;
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 14px;
+            padding-top: 2px;
+        }
+
+        &::-ms-input-placeholder {
+            font-family: 'Nanum Gothic', sans-serif;
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 14px;
+            padding-top: 2px;
+        }
+    }
+
+    .popup .button_wrapper {
+        min-height: 64px;
+        margin-bottom: 40px;
+
+        input {
+            color: #ffffff;
+            background-color: #0099ff;
+            border: none;
+            width: 100%;
+            height: 64px;
+            font-size: 16px;
+            letter-spacing: -1px;
+            cursor: pointer;
+            -moz-border-radius: 32px/50%;
+            -webkit-border-radius: 32px/50%;
+            border-radius: 32px/50%;
+
+            &:hover {
+                background-color: #0089e6;
+            }
+        }
+    }
+
+    /***********  popup  *************/
+
+    /****** help popup **************/
+
+    #help_view {
+        display: none;
+
+        .panel {
+            width: 980px;
+            height: 800px;
+
+            .left_box {
+                float: left;
+                background-color: #f4f9fd;
+                width: 260px;
+                height: 100%;
+            }
+
+            .right_box {
+                float: left;
+                background-color: #ffffff;
+                height: 800px;
+                width: 720px;
+                position: relative;
+            }
+        }
+
+        .right_box .content_box {
+            position: relative;
+            height: 730px;
+            overflow-y: auto;
+            margin-top: 40px;
+            width: 100%;
+        }
+
+        .panel .right_box .content {
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+        }
+
+        .title_box {
+            margin-top: 40px;
+            margin-left: 50px;
+            display: inline-block;
+            width: 160px;
+
+            .text {
+                float: left;
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+
+        .logo_box {
+            margin-top: 30px;
+            margin-left: 49px;
+            display: inline-block;
+            width: 160px;
+
+            .logo {
+                float: left;
+                width: 95px;
+                height: 13px;
+                background-repeat: no-repeat;
+                background-size: 73px 13px;
+                background-image: url(https://www.wiseapp.co.kr/resources/img/home/img_logo_main.png);
+                background-position: left;
+
+                &.app {
+                    margin-top: 10px;
+                }
+
+                &.retail {
+                    background-size: 95px 13px;
+                    background-image: url(https://www.wiseapp.co.kr/resources/img/home/img_logo_main_retail.png);
+                }
+            }
+        }
+
+        .index_list {
+            margin-top: 5px;
+            margin-left: 50px;
+            width: 160px;
+            border-top: 1px solid #4a5a6f;
+
+            .item {
+                .header {
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 14px;
+                    position: relative;
+                    cursor: pointer;
+
+                    .text1 {
+                        color: rgba(0, 0, 0, 0.6);
+                    }
+                }
+
+                + .item {
+                    border-top: 1px solid #d9d9d9;
+
+                    &.dic {
+                        border-top: 1px solid #4a5a6f;
+                    }
+                }
+
+                &.selected .header .text1 {
+                    color: rgba(0, 0, 0, 1);
+                }
+
+                .header .btn_open {
+                    position: absolute;
+                    top: 0px;
+                    right: 15px;
+                    height: 50px;
+                    width: 14px;
+                    background-repeat: no-repeat;
+                    background-size: 14px 8px;
+                    background-position: center;
+                    background-image: url(https://www.wiseapp.co.kr/resources/img/helpview/btn_open.png);
+                    cursor: pointer;
+                }
+
+                &.selected .header .btn_open {
+                    background-image: url(https://www.wiseapp.co.kr/resources/img/helpview/btn_close.png);
+                }
+
+                .sub_index_list {
+                    margin-bottom: 15px;
+                    display: none;
+                }
+
+                &.selected .sub_index_list {
+                    display: block;
+                }
+
+                .sub_index_list .sub_item {
+                    margin-left: 15px;
+                    font-size: 14px;
+                    color: #666666;
+                    line-height: 30px;
+                    cursor: pointer;
+
+                    &.selected {
+                        color: #0099ff;
+                        font-weight: 600;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .right_box {
+            .title_line {
+                background-color: #0099ff;
+                width: 28px;
+                height: 5px;
+            }
+
+            .title_1 {
+                font-size: 16px;
+                font-weight: 600;
+                color: #000000;
+                margin-top: 20px;
+            }
+
+            .text {
+                font-size: 12px;
+                color: rgba(0, 0, 0, 0.8);
+                margin-top: 6px;
+                line-height: 18px;
+            }
+
+            .himg {
+                margin-top: 12px;
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            .text_1 {
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.8);
+                margin-top: 6px;
+                line-height: 18px;
+            }
+
+            .title_2 {
+                font-size: 14px;
+                font-weight: 600;
+                color: rgba(0, 0, 0, 1);
+                margin-top: 40px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    /****** help popup **************/
+
+    /***********  page_section   *************/
+
+    .page_section {
+        clear: both;
+        position: relative;
+        margin: 40px 0px 0px 20px;
+        padding-top: 4px;
+        overflow: hidden;
+        zoom: 1;
+
+        &.bottom {
+            margin: 40px 0px 50px 0px;
+            height: 42px;
+            overflow: hidden;
+            zoom: 1;
+
+            &.bottom0 {
+                margin-bottom: 0px;
+            }
+        }
+
+        #title {
+            height: 42px;
+            overflow: hidden;
+        }
+    }
+
+    .page_section {
+        #title {
+            h1 {
+                float: left;
+                margin: 0;
+                zoom: 1;
+                font-size: 34px;
+                color: rgba(0, 0, 0, 0.8);
+                letter-spacing: -1px;
+                font-weight: 600;
+            }
+
+            .info {
+                float: left;
+                font-size: 14px;
+                margin-top: 8px;
+                color: #0099ff;
+                letter-spacing: -1px;
+                margin-left: 16px;
+            }
+
+            #storelogo {
+                float: left;
+                width: 120px;
+                height: 42px;
+                margin-right: 25px;
+
+                &.google {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/img_logo_googleplay.png');
+                }
+
+                &.apple {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/img_logo_appstore.png');
+                }
+            }
+
+            #baseDT {
+                float: left;
+                margin: 16px 0 0 10px;
+                font-size: 1.5em;
+                zoom: 1;
+                color: rgba(0, 0, 0, 0.7);
+                letter-spacing: -1px;
+            }
+        }
+
+        #share {
+            position: absolute;
+            top: 0px;
+            right: 20px;
+
+            ul {
+                float: right;
+
+                li {
+                    margin: 0;
+                    padding-left: 10px;
+                    border: 0;
+                    float: left;
+
+                    div {
+                        cursor: pointer;
+                        width: 42px;
+                        height: 42px;
+                        -webkit-transition: all 0.2s ease-in-out;
+                        -moz-transition: all 0.2s ease-in-out;
+                        -o-transition: all 0.2s ease-in-out;
+                        -ms-transition: all 0.2s ease-in-out;
+                        transition: all 0.2s ease-in-out;
+                    }
+                }
+            }
+
+            #facebook {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_share_facebook_nor.png');
+
+                &:hover {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_share_facebook_pre.png');
+                }
+            }
+
+            #twitter {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_share_twitter_nor.png');
+
+                &:hover {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_share_twitter_pre.png');
+                }
+            }
+
+            #naverblog {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_share_naverblog_nor.png');
+
+                &:hover {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_share_naverblog_pre.png');
+                }
+            }
+
+            #url {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_share_urlcopy_nor.png');
+
+                &:hover {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_share_urlcopy_pre.png');
+                }
+            }
+
+            #newsletter {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/0516/btn_newsletter_nor.png');
+                width: 79px;
+                height: 42px;
+
+                &:hover {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/0516/btn_newsletter_pre.png');
+                }
+            }
+        }
+    }
+
+    /***********  page_section   *************/
+
+    /***********  post   *************/
+
+    .post {
+        clear: both;
+        position: relative;
+        margin: 0px 20px 0 20px;
+        overflow: visible;
+        zoom: 1;
+
+        > {
+            .header {
+                position: relative;
+                height: 70px;
+                overflow: hidden;
+
+                h2.title {
+                    float: left;
+                    font-weight: 600;
+                    font-size: 18px;
+                    margin-top: 50px;
+                    color: rgba(0, 0, 0, 0.8);
+                    letter-spacing: -1px;
+                }
+
+                .info {
+                    float: left;
+                    font-size: 14px;
+                    margin-top: 54px;
+                    color: #0099ff;
+                    letter-spacing: -1px;
+                    margin-left: 16px;
+                }
+
+                .detailmove {
+                    float: right;
+                    cursor: pointer;
+                    margin-top: 56px;
+                    color: #0099ff;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .body {
+                clear: both;
+                overflow: hidden;
+            }
+        }
+
+        .more {
+            position: relative;
+            overflow: hidden;
+
+            #btn_more {
+                height: 54px;
+                margin-top: 20px;
+                -moz-border-radius: 6px;
+                -webkit-border-radius: 6px;
+                border-radius: 6px;
+                border: #bbc5cd 2px solid;
+                cursor: pointer;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    border: #0099ff 2px solid;
+                }
+
+                .img {
+                    margin: 22px auto;
+                    width: 42px;
+                    height: 10px;
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ic_more_nor.png');
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    -ms-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                }
+
+                &:hover .img {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ic_more_pre.png');
+                }
+
+                .text {
+                    margin: 18px auto;
+                    text-align: center;
+                    color: #bbc5cd;
+                    font-size: 20px;
+                    font-weight: 600;
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    -ms-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                }
+
+                &:hover .text {
+                    color: #0099ff;
+                }
+            }
+        }
+    }
+
+    /***********  post   *************/
+
+    /***********  section   *************/
+
+    .section {
+        margin-top: 20px;
+        height: 599px;
+        box-sizing: border-box;
+        background: #ffffff;
+        border-radius: 6px;
+
+        /*box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.1);*/
+        position: relative;
+
+        &.focus:hover {
+            box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        &.many {
+            float: left;
+            width: 485px;
+
+            &.left {
+                margin-right: 7px;
+            }
+
+            &.right {
+                margin-left: 7px;
+            }
+        }
+
+        .header {
+            height: 50px;
+
+            h2.subtitle {
+                float: left;
+                margin: 26px 0 10px 30px;
+                font-size: 1.16em;
+                color: rgba(0, 0, 0, 0.8);
+            }
+
+            > div.unit {
+                float: right;
+                margin: 23px 20px 4px 0;
+                line-height: 23px;
+                min-width: 38px;
+                border-radius: 13px;
+                background: #f7f7f8;
+                text-align: center;
+            }
+
+            .unit h2 {
+                color: #acb2bd;
+                vertical-align: middle;
+                margin-left: 13px;
+                margin-right: 13px;
+            }
+        }
+
+        .body {
+            text-align: center;
+
+            ul.many_col {
+                float: left;
+                width: 50%;
+            }
+
+            .columns li.has_graph {
+                float: left;
+                width: 50%;
+                overflow: hidden;
+            }
+        }
+    }
+
+    #notice_body .section {
+        height: auto;
+
+        .body {
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            overflow: hidden;
+        }
+    }
+
+    /***********  section   *************/
+
+    /***********  table   *************/
+
+    .div_tbl {
+        width: 100%;
+
+        ul.title {
+            width: 100%;
+            display: table;
+            table-layout: fixed;
+
+            /* optional */
+
+            li {
+                text-align: center;
+            }
+        }
+
+        position: relative;
+
+        li {
+        }
+
+        .items .item {
+            width: 100%;
+            height: 50px;
+            cursor: pointer;
+
+            &.nodata {
+                margin-top: 200px;
+                cursor: default;
+
+                img {
+                    border: 0;
+                }
+
+                .text {
+                    font-size: 1.5em;
+                    color: #a2b0bb;
+                }
+            }
+
+            &.hover {
+                height: 90px;
+            }
+
+            .columns {
+                position: relative;
+                height: 50px;
+            }
+
+            &.hover .columns {
+                height: 90px;
+            }
+
+            .columns li {
+                line-height: 50px;
+                float: left;
+                position: absolute;
+            }
+
+            &.hover .columns li {
+                line-height: 90px;
+            }
+
+            .columns .rank {
+                font-size: 12px;
+                color: rgba(86, 104, 127, 0.5);
+                left: 20px;
+                width: 14px;
+                font-weight: 600;
+            }
+
+            &.hover .columns .rank {
+                font-size: 16px;
+                font-weight: 100;
+                color: rgba(75, 88, 107, 0.8);
+            }
+
+            .columns .icon {
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                top: 15px;
+                left: 44px;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            &.hover .columns .icon {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                top: 25px;
+                left: 44px;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            .columns .name {
+                font-size: 12px;
+                color: #56687f;
+                left: 70px;
+                right: 305px;
+                font-weight: 600;
+                text-align: left;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            &.hover .columns .name {
+                left: 96px;
+                font-size: 16px;
+                font-weight: 600;
+                color: #2c3749;
+                letter-spacing: -0.5px;
+            }
+        }
+    }
+
+    /*
+.div_tbl .items .item  * {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}*/
+
+    #keywordRank .div_tbl .items .item.hover .columns .name {
+        font-size: 2em;
+    }
+
+    .div_tbl .items .item {
+        .columns .val {
+            text-align: right;
+            font-size: 12px;
+            color: rgba(86, 104, 127, 0.8);
+            right: 78px;
+            width: 78px;
+            font-weight: 100;
+        }
+
+        &.hover .columns .val {
+            font-size: 14px;
+            font-weight: 600;
+            color: #4b586b;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .columns .pct {
+            font-size: 10px;
+            color: #56687f;
+            right: 25px;
+            width: 45px;
+            font-weight: 100;
+            text-align: right;
+        }
+
+        &.hover .columns .pct {
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .columns .pct {
+            &.up {
+                color: #ff788e;
+            }
+
+            &.down {
+                color: #00bf99;
+            }
+
+            &.new {
+                text-align: center;
+
+                .img {
+                    width: 26px;
+                    height: 9px;
+                    background-size: 26px 9px;
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ic_new_rank.png');
+                    margin-left: 18px;
+                    margin-top: 21px;
+                }
+            }
+        }
+    }
+
+    #appTop100In .div_tbl .items .item .columns .pct.new .img,
+    #appTop100Out .div_tbl .items .item .columns .pct.new .img {
+        margin-left: 10px;
+    }
+
+    .div_tbl .items .item.hover .columns .pct.new .img {
+        margin-top: 40px;
+    }
+
+    #keywordRank .div_tbl .items .item .columns .pct.new .img {
+        margin-left: 43px;
+    }
+
+    .div_tbl .items .item {
+        .columns .bar {
+            /*right:165px;*/
+            left: 190px;
+            height: 6px;
+            line-height: 6px;
+            top: 21px;
+            min-width: 1px;
+        }
+
+        &.hover .columns .bar {
+            height: 8px;
+            line-height: 8px;
+            top: 41px;
+            box-shadow: 1px 1px 2px #888888;
+        }
+
+        .columns .bar.user {
+            background-color: rgba(64, 214, 237, 0.5);
+        }
+
+        &.hover .columns .bar.user {
+            background-color: #40d6ed;
+        }
+
+        .columns .bar.time {
+            background-color: rgba(122, 183, 237, 0.5);
+        }
+
+        &.hover .columns .bar.time {
+            background-color: rgba(122, 183, 237, 1);
+        }
+
+        .columns .bar.count {
+            background-color: rgba(255, 228, 0, 0.5);
+        }
+
+        &.hover .columns .bar.count {
+            background-color: rgba(255, 228, 0, 1);
+        }
+
+        .columns .bar.data {
+            background-color: rgba(255, 150, 67, 0.5);
+        }
+
+        &.hover .columns .bar.data {
+            background-color: rgba(255, 150, 67, 1);
+        }
+
+        .columns .bar.search {
+            background-color: rgba(0, 153, 255, 0.5);
+        }
+
+        &.hover .columns .bar {
+            &.search {
+                background-color: rgba(0, 153, 255, 1);
+            }
+
+            &.user {
+                box-shadow: 1px 1px 2px rgba(64, 214, 237, 0.4);
+            }
+
+            &.time {
+                box-shadow: 1px 1px 2px rgba(122, 183, 237, 0.4);
+            }
+
+            &.count {
+                box-shadow: 1px 1px 2px rgba(255, 228, 0, 0.4);
+            }
+
+            &.data {
+                box-shadow: 1px 1px 2px rgba(255, 150, 67, 0.4);
+            }
+
+            &.search {
+                box-shadow: 1px 1px 2px rgba(0, 153, 255, 0.4);
+            }
+        }
+
+        .columns .bar.revenue {
+            background-color: rgba(0, 153, 255, 0.5);
+        }
+
+        &.hover .columns .bar.revenue {
+            background-color: rgba(0, 153, 255, 1);
+        }
+    }
+
+    #appUsedBytesRank .div_tbl .item .rank {
+        left: 20px !important;
+        width: 14px !important;
+    }
+
+    #keywordRank .div_tbl .item {
+        .name {
+            left: 62px !important;
+            width: 190px !important;
+        }
+
+        .bar {
+            left: 282px !important;
+        }
+
+        .val {
+            right: 127px !important;
+            width: 135px !important;
+        }
+
+        .pct {
+            right: 42px !important;
+            width: 70px !important;
+        }
+    }
+
+    .div_tbl .items {
+        .line {
+            height: 1px;
+            background-color: #f3f3f4;
+        }
+
+        .item {
+            &.updown .rank,
+            &.topinout .rank {
+                width: 31px;
+            }
+
+            &.updown .icon,
+            &.topinout .icon,
+            &.updown.hover .icon,
+            &.topinout.hover .icon {
+                left: 61px;
+            }
+
+            &.updown .name,
+            &.topinout .name {
+                left: 90px;
+                width: 200px;
+                right: auto;
+            }
+
+            &.updown.hover .name,
+            &.topinout.hover .name {
+                left: 115px;
+                width: 200px;
+                right: auto;
+            }
+
+            .right {
+                right: 40px;
+                text-align: right;
+            }
+
+            .icon2 {
+                float: left;
+                width: 34px;
+                height: 50px;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-right: 18px;
+            }
+
+            &.hover .icon2 {
+                width: 34px;
+                height: 90px;
+            }
+
+            .columns .pct2 {
+                float: left;
+                font-size: 10px;
+                color: #56687f;
+                font-weight: 100;
+                text-align: right;
+            }
+
+            &.hover .columns .pct2 {
+                font-size: 1.333em;
+                font-weight: 600;
+            }
+
+            .columns .pct2 {
+                &.up {
+                    color: #ff788e;
+                }
+
+                &.down {
+                    color: #00bf99;
+                }
+            }
+
+            &.updown {
+                .icon2 {
+                    background-image: none;
+                }
+
+                &.hover .icon2 {
+                    &.up {
+                        background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_trendingup.png');
+                    }
+
+                    &.down {
+                        background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_trendingdown.png');
+                    }
+                }
+            }
+
+            &.topinout.hover .icon2 {
+                &.up {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_newin.png');
+                }
+
+                &.down {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_outof.png');
+                }
+            }
+
+            &.updown.hover .icon2 .blind {
+                width: 34px;
+                height: 40px;
+                background-color: #ebeff3;
+                margin-top: 25px;
+            }
+        }
+    }
+
+    #intrinsicValueMomentum .div_tbl .items .item {
+        &.updown.hover .name {
+            width: 160px;
+        }
+
+        .icon2 {
+            margin-right: 5px;
+        }
+    }
+
+    /***********  table   *************/
+
+    /************* select_box ****************/
+
+    .select_box {
+        .selected_box {
+            height: 54px;
+
+            /*border: #bbc5cd 1px solid;*/
+            cursor: pointer;
+        }
+
+        .select_box_list {
+            position: absolute;
+            background: #ffffff;
+            top: 54px;
+            z-index: 1900;
+            display: none;
+            border: #0099ff 1px solid;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+
+        .selected_box {
+            #name {
+                float: left;
+                margin-top: 20px;
+                margin-left: 25px;
+                text-align: center;
+                font-size: 14px;
+                color: rgba(86, 104, 127, 0.8);
+            }
+
+            #selecter {
+                float: right;
+                margin-right: 30px;
+                margin-top: 22px;
+                width: 14px;
+                height: 14px;
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_filter_arrow_open_nor.png');
+            }
+
+            &:hover #selecter {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_filter_arrow_open_pre.png');
+            }
+
+            #name {
+                margin-left: 20px;
+            }
+        }
+
+        &.selected .selected_box {
+            border: #0099ff 1px solid !important;
+            border-bottom-left-radius: 0px !important;
+            border-bottom-right-radius: 0px !important;
+
+            #selecter {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_filter_arrow_close_pre.png') !important;
+            }
+        }
+
+        .selected_box:hover {
+            border: #0099ff 1px solid;
+        }
+
+        &.selected .selected_box #name,
+        .selected_box:hover #name {
+            color: #0099ff !important;
+        }
+
+        &.selected .select_box_list {
+            display: block;
+            z-index: 1800;
+
+            .item {
+                position: relative;
+                height: 54px;
+                border-bottom: 1px solid #e1e3e5;
+
+                /*border-left: 1px solid #FFFFFF;
+      border-right: 1px solid #FFFFFF;*/
+                cursor: pointer;
+
+                &:last-child {
+                    border-bottom: 0px;
+                }
+
+                &:hover {
+                    background: rgba(0, 153, 255, 0.1);
+                }
+            }
+        }
+
+        .select_box_list .item {
+            #name {
+                float: left;
+                margin-top: 20px;
+                margin-left: 25px;
+                text-align: center;
+                font-size: 14px;
+                color: #56687f;
+            }
+
+            &.selected {
+                #name {
+                    font-weight: 600;
+                }
+
+                #check {
+                    float: left;
+                    margin-left: 10px;
+                    margin-top: 20px;
+                    width: 14px;
+                    height: 14px;
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_filter_check.png');
+                }
+            }
+        }
+
+        &.bold_line {
+            .selected_box {
+                border: #bbc5cd 2px solid;
+            }
+
+            .select_box_list {
+                border: #0099ff 2px solid;
+            }
+        }
+
+        &.selected.bold_line .selected_box,
+        &.bold_line .selected_box:hover {
+            border: #0099ff 2px solid !important;
+        }
+    }
+
+    /*
+.select_box .selected_box:hover{
+	border: #0099ff 1px solid !important; 
+}
+*/
+
+    /***** select box  bold_line **********/
+
+    /*
+.select_box.bold_line.selected .select_box_list .item{
+    border-bottom: 1px solid #e1e3e5;
+    border-left: 2px solid #FFFFFF;
+    border-right: 2px solid #FFFFFF;	
+}
+*/
+    /************* select_box ****************/
+
+    /***********  filter   *************/
+
+    .page_filter {
+        clear: both;
+        position: relative;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        zoom: 1;
+        z-index: 1800;
+
+        &.rank {
+            margin-bottom: 55px;
+            margin-top: 30px;
+        }
+
+        #title {
+            height: 54px;
+
+            #baseDT {
+                float: left;
+                margin: 16px 0 16px 0;
+                zoom: 1;
+                font-size: 2.16em;
+            }
+
+            #baseDTSelecter {
+                float: left;
+                margin-left: 8px;
+                margin-top: 16px;
+                zoom: 1;
+                width: 30px;
+                height: 30px;
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_calander_open_nor.png');
+                cursor: pointer;
+
+                &:hover {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_calander_open_pre.png');
+                }
+
+                &.close {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_calander_close_nor.png');
+
+                    &:hover {
+                        background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_calander_close_pre.png');
+                    }
+                }
+            }
+        }
+    }
+
+    .trans_ani {
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .page_filter {
+        #dateType {
+            float: right;
+            width: 280px;
+            height: 54px;
+            position: relative;
+
+            > div {
+                float: left;
+                font-size: 14px;
+                text-align: center;
+                height: 100%;
+                width: 138px;
+                border: 1px solid #e1e3e5;
+                background-color: #ffffff;
+                -moz-border-radius: 6px;
+                -webkit-border-radius: 6px;
+                border-radius: 6px;
+
+                /*position: relative;
+      height: 54px;*/
+
+                cursor: pointer;
+
+                p {
+                    margin-top: 20px;
+                }
+            }
+
+            #weekly {
+                -moz-border-top-right-radius: 0px;
+                -webkit-border-top-right-radius: 0px;
+                border-top-right-radius: 0px;
+                -moz-border-bottom-right-radius: 0px;
+                -webkit-border-bottom-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+
+            #monthly {
+                border-left: 0px;
+                -moz-border-top-left-radius: 0px;
+                -webkit-border-top-left-radius: 0px;
+                border-top-left-radius: 0px;
+                -moz-border-bottom-left-radius: 0px;
+                -webkit-border-bottom-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+
+            &:hover #weekly {
+                border-right: 1px solid #0099ff;
+            }
+
+            > div {
+                &:hover {
+                    color: #0099ff;
+                    border-top: 1px solid #0099ff;
+                    border-bottom: 1px solid #0099ff;
+                }
+
+                &.selected p {
+                    color: #0099ff;
+                }
+            }
+
+            #weekly:hover {
+                border-left: 1px solid #0099ff;
+            }
+
+            #monthly:hover {
+                border-right: 1px solid #0099ff;
+            }
+        }
+
+        #dateType3 {
+            float: right;
+            width: 330px;
+            height: 54px;
+            position: relative;
+
+            > div {
+                float: left;
+                font-size: 14px;
+                text-align: center;
+                height: 100%;
+                width: 108px;
+                position: relative;
+                border: 1px solid #e1e3e5;
+                background-color: #ffffff;
+                -moz-border-radius: 6px;
+                -webkit-border-radius: 6px;
+                border-radius: 6px;
+
+                /*position: relative;
+      height: 54px;*/
+
+                cursor: pointer;
+                margin-left: -1px;
+                z-index: 0;
+
+                p {
+                    line-height: 54px;
+                }
+            }
+
+            #daily {
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+
+            #weekly {
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+
+                /*
+	border-left: 0px;
+	*/
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+
+            #monthly {
+                /*
+      	border-left: 0px;
+          */
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+
+            &:hover #weekly {
+                border-right: 1px solid #0099ff;
+            }
+
+            > div {
+                &:hover {
+                    color: #0099ff;
+                    border: 1px solid #0099ff;
+                    z-index: 1;
+                }
+
+                &.selected p {
+                    color: #0099ff;
+                }
+            }
+        }
+
+        .subfilter {
+            background-color: #ffffff;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            position: relative;
+            height: 54px;
+            width: 100%;
+
+            > ul {
+                min-height: 54px;
+                border: 1px solid #e1e3e5;
+
+                li.item {
+                    min-height: 54px;
+                    width: 50%;
+                    position: relative;
+                    -webkit-transition: border-color ease-in-out 0.15s;
+                    -moz-transition: border-color ease-in-out 0.15s;
+                    -o-transition: border-color ease-in-out 0.15s;
+                    -ms-transition: border-color ease-in-out 0.15s;
+                    transition: border-color ease-in-out 0.15s;
+
+                    &.more {
+                        &:hover {
+                            border: #0099ff 1px solid;
+                        }
+
+                        &.left:hover,
+                        &.right:hover {
+                            -moz-border-radius: 6px;
+                            -webkit-border-radius: 6px;
+                            border-radius: 6px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #popfilter .subfilter > ul li.item:hover {
+            border: none;
+        }
+
+        .subfilter > ul {
+            li.item.more:hover #name {
+                color: #0099ff;
+            }
+
+            &.one li.item {
+                width: 100%;
+            }
+
+            &.two li.item {
+                width: 50%;
+            }
+
+            &.three li.item {
+                width: 33.333%;
+            }
+
+            &.six li.item {
+                width: 16.666%;
+            }
+
+            li {
+                float: left;
+                box-sizing: border-box;
+                padding: 0 16px;
+                position: relative;
+
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 1px;
+                    background-color: rgba(48, 48, 49, 0.1);
+                    height: 52px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                &:last-child:after {
+                    display: none;
+                }
+
+                .column {
+                    position: relative;
+                    width: 100%;
+                }
+            }
+        }
+
+        #popfilter {
+            margin-top: 10px;
+            margin-bottom: 40px;
+            overflow: hidden;
+
+            * {
+                -webkit-transition: all 0.2s ease-in-out;
+                -moz-transition: all 0.2s ease-in-out;
+                -o-transition: all 0.2s ease-in-out;
+                -ms-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+            }
+
+            .subfilter {
+                height: 105px;
+
+                > ul {
+                    height: 105px;
+
+                    li {
+                        &.item {
+                            height: 105px;
+                            padding: 0px;
+                        }
+
+                        &:after {
+                            margin-top: 26.5px;
+                            height: 52px;
+                            display: none;
+                        }
+
+                        &:first-child:after {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        .subfilter > ul li:after {
+            content: '';
+            display: block;
+            width: 1px;
+            background-color: rgba(48, 48, 49, 0.1);
+            height: 52px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        #popfilter {
+            #gender.subfilter > ul li {
+                &#all_col {
+                    width: 117px;
+                }
+
+                &#male_col {
+                    width: 112px;
+                }
+
+                &#female_col {
+                    width: 86px;
+                }
+            }
+
+            .subfilter > ul li.item {
+                #all {
+                    margin-left: 42px;
+                }
+
+                #male {
+                    margin-left: 32px;
+                }
+
+                #female {
+                    margin-left: 0px;
+                }
+            }
+
+            #age.subfilter > ul li {
+                &#all_col {
+                    width: 128px;
+                }
+
+                &#ten_col {
+                    width: 132px;
+                }
+
+                &#twenty_col,
+                &#thirty_col,
+                &#forty_col,
+                &#fifty_col {
+                    width: 97px;
+                }
+            }
+
+            .subfilter > ul li.item {
+                margin-left: 0px;
+
+                #ten {
+                    margin-left: 35px;
+                }
+
+                .img {
+                    margin-top: 20.5px;
+                }
+            }
+        }
+
+        #gender {
+            float: left;
+            width: 324px;
+            margin-right: 10px;
+        }
+
+        #popfilter {
+            .column {
+                width: 44px;
+                height: 44px;
+                cursor: pointer;
+
+                &.text {
+                    height: 12px;
+                    margin-top: 8px;
+                    text-align: center;
+                    font-weight: 600;
+                    color: rgba(86, 104, 127, 0.8);
+                }
+            }
+
+            .subfilter > ul li.item {
+                &:hover .text,
+                &.selected .text {
+                    color: #1f79e8;
+                }
+            }
+
+            #all.img {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_filter_all_nor.png');
+            }
+
+            .subfilter > ul li.item {
+                &:hover #all.img,
+                &.selected #all.img {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_filter_all_foc.png');
+                }
+            }
+
+            #male.img {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_filter_male_nor.png');
+            }
+
+            .subfilter > ul li.item {
+                &:hover #male.img,
+                &.selected #male.img {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_filter_male_foc.png');
+                }
+            }
+
+            #female.img {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_filter_female_nor.png');
+            }
+
+            .subfilter > ul li.item {
+                &:hover #female.img,
+                &.selected #female.img {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_filter_female_foc.png');
+                }
+            }
+
+            #ten.img {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_filter_10_nor.png');
+            }
+
+            .subfilter > ul li.item {
+                &:hover #ten.img,
+                &.selected #ten.img {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_filter_10_foc.png');
+                }
+            }
+
+            #twenty.img {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_filter_20_nor.png');
+            }
+
+            .subfilter > ul li.item {
+                &:hover #twenty.img,
+                &.selected #twenty.img {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_filter_20_foc.png');
+                }
+            }
+
+            #thirty.img {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_filter_30_nor.png');
+            }
+
+            .subfilter > ul li.item {
+                &:hover #thirty.img,
+                &.selected #thirty.img {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_filter_30_foc.png');
+                }
+            }
+
+            #forty.img {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_filter_40_nor.png');
+            }
+
+            .subfilter > ul li.item {
+                &:hover #forty.img,
+                &.selected #forty.img {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_filter_40_foc.png');
+                }
+            }
+
+            #fifty.img {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_filter_50_nor.png');
+            }
+
+            .subfilter > ul li.item {
+                &:hover #fifty.img,
+                &.selected #fifty.img {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_filter_50_foc.png');
+                }
+            }
+        }
+
+        #age {
+            float: left;
+            width: 650px;
+        }
+
+        #popfilter {
+            ul li.selected {
+                color: blue;
+                font-weight: 600;
+            }
+
+            &.disable {
+                .column {
+                    cursor: auto;
+                }
+
+                ul li.item .text {
+                    color: #cdd2d8;
+                    font-weight: normal;
+                }
+
+                .subfilter > ul li.item {
+                    &:hover .text,
+                    &.selected .text {
+                        color: #cdd2d8;
+                        font-weight: normal;
+                    }
+                }
+
+                #all.img {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/0912/btn_filter_all_dim.png');
+                }
+
+                .subfilter > ul li.item {
+                    &:hover #all.img,
+                    &.selected #all.img {
+                        background-image: url('https://www.wiseapp.co.kr/resources/img/0912/btn_filter_all_dim.png');
+                    }
+                }
+
+                #male.img {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/0912/btn_filter_male_dim.png');
+                }
+
+                .subfilter > ul li.item {
+                    &:hover #male.img,
+                    &.selected #male.img {
+                        background-image: url('https://www.wiseapp.co.kr/resources/img/0912/btn_filter_male_dim.png');
+                    }
+                }
+
+                #female.img {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/0912/btn_filter_female_dim.png');
+                }
+
+                .subfilter > ul li.item {
+                    &:hover #female.img,
+                    &.selected #female.img {
+                        background-image: url('https://www.wiseapp.co.kr/resources/img/0912/btn_filter_female_dim.png');
+                    }
+                }
+
+                #ten.img {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/0912/btn_filter_10_dim.png');
+                }
+
+                .subfilter > ul li.item {
+                    &:hover #ten.img,
+                    &.selected #ten.img {
+                        background-image: url('https://www.wiseapp.co.kr/resources/img/0912/btn_filter_10_dim.png');
+                    }
+                }
+
+                #twenty.img {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/0912/btn_filter_20_dim.png');
+                }
+
+                .subfilter > ul li.item {
+                    &:hover #twenty.img,
+                    &.selected #twenty.img {
+                        background-image: url('https://www.wiseapp.co.kr/resources/img/0912/btn_filter_20_dim.png');
+                    }
+                }
+
+                #thirty.img {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/0912/btn_filter_30_dim.png');
+                }
+
+                .subfilter > ul li.item {
+                    &:hover #thirty.img,
+                    &.selected #thirty.img {
+                        background-image: url('https://www.wiseapp.co.kr/resources/img/0912/btn_filter_30_dim.png');
+                    }
+                }
+
+                #forty.img {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/0912/btn_filter_40_dim.png');
+                }
+
+                .subfilter > ul li.item {
+                    &:hover #forty.img,
+                    &.selected #forty.img {
+                        background-image: url('https://www.wiseapp.co.kr/resources/img/0912/btn_filter_40_dim.png');
+                    }
+                }
+
+                #fifty.img {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/0912/btn_filter_50_dim.png');
+                }
+
+                .subfilter > ul li.item {
+                    &:hover #fifty.img,
+                    &.selected #fifty.img {
+                        background-image: url('https://www.wiseapp.co.kr/resources/img/0912/btn_filter_50_dim.png');
+                    }
+                }
+            }
+        }
+
+        #marketType {
+            clear: both;
+            position: relative;
+            margin-top: 20px;
+            width: 984px;
+            height: 54px;
+
+            > .item {
+                float: left;
+                font-size: 14px;
+                text-align: center;
+                height: 54px;
+                border: 1px solid #e1e3e5;
+                background-color: #ffffff;
+                position: relative;
+                z-index: 1899;
+
+                + .item {
+                    margin-left: -1px;
+                }
+
+                &:hover {
+                    z-index: 1900;
+                }
+
+                * {
+                    -webkit-transition: all 0.2s ease-in-out;
+                    -moz-transition: all 0.2s ease-in-out;
+                    -o-transition: all 0.2s ease-in-out;
+                    -ms-transition: all 0.2s ease-in-out;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+
+            .item {
+                &.more {
+                    cursor: pointer;
+                }
+
+                &:first-child {
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+                }
+
+                &.selected {
+                    &:first-child {
+                        border-bottom-left-radius: 0px;
+                    }
+
+                    z-index: 2002;
+                }
+
+                &:last-child {
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                }
+
+                &.selected:last-child {
+                    border-bottom-right-radius: 0px;
+                }
+            }
+
+            &.three > .item {
+                width: 326px;
+
+                &:first-child,
+                &:last-child {
+                    width: 326px;
+                }
+            }
+
+            &.two .item {
+                width: 491px;
+            }
+
+            > .item.more {
+                &:hover,
+                &.selected {
+                    color: #0099ff;
+                    border: 1px solid #0099ff;
+                }
+
+                &:hover + .item,
+                &.selected + .item {
+                    /* border-left: 0;*/
+                    transition: none;
+                }
+            }
+
+            .item {
+                .column {
+                    overflow: hidden;
+                    height: 100%;
+                }
+
+                &.selected {
+                    #selecter {
+                        background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_filter_arrow_close_nor.png') !important;
+                    }
+
+                    &:hover #selecter {
+                        background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_filter_arrow_close_pre.png') !important;
+                    }
+                }
+            }
+
+            > .item.more {
+                #selecter {
+                    float: right;
+                    margin-right: 30px;
+                    margin-top: 20px;
+                    margin-left: 30px;
+                    font-size: 14px;
+                    width: 14px;
+                    height: 14px;
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_filter_arrow_open_nor.png');
+                }
+
+                &:hover #selecter,
+                &.selected #selecter {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_filter_arrow_open_pre.png');
+                }
+            }
+
+            #store {
+                #icon {
+                    float: left;
+                    margin-left: 20px;
+                    margin-top: 18px;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/img_google_big.png');
+                }
+
+                #name {
+                    float: left;
+                    margin-left: 5px;
+                    margin-top: 20px;
+                    font-size: 14px;
+                    color: rgba(86, 104, 127, 0.8);
+                }
+            }
+
+            > .item.more:hover {
+                #store #name,
+                #category #name {
+                    color: #0099ff;
+                }
+            }
+
+            #country #name,
+            #category #name {
+                float: left;
+                margin-left: 20px;
+                margin-top: 20px;
+                font-size: 14px;
+                color: rgba(86, 104, 127, 0.8);
+            }
+
+            .sub_list {
+                position: absolute;
+                top: 54px;
+                z-index: 1901;
+                background: #ffffff;
+                display: none;
+                overflow: hidden;
+                border: 1px solid #0099ff;
+                -moz-border-bottom-left-radius: 6px;
+                -webkit-border-bottom-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+                -moz-border-bottom-right-radius: 6px;
+                -webkit-border-bottom-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+            }
+
+            &.two .sub_list {
+                left: -1px;
+            }
+
+            #category_list.sub_list {
+                right: -1px;
+            }
+
+            .item.selected .sub_list {
+                display: block !important;
+            }
+
+            .sub_list {
+                .store_item,
+                .country_item {
+                    height: 54px;
+                    border-top: 1px solid #e1e3e5;
+                    background: #ffffff;
+                    color: rgba(86, 104, 127, 0.8);
+                }
+
+                .category_item {
+                    height: 54px;
+                    border-top: 1px solid #e1e3e5;
+                    background: #ffffff;
+                    color: rgba(86, 104, 127, 0.8);
+
+                    &.selected {
+                        color: #0099ff;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            &.two .sub_list .store_item {
+                width: 491px;
+            }
+
+            &.three .sub_list .store_item {
+                width: 326px;
+            }
+
+            &.two .sub_list .country_item {
+                width: 327px;
+            }
+
+            &.three .sub_list .country_item {
+                /*width: 327px;*/
+                width: 326px;
+            }
+
+            .sub_list .store_item {
+                &:last-child {
+                    /*border-bottom: 1px solid #e1e3e5;*/
+                    -moz-border-bottom-left-radius: 6px;
+                    -webkit-border-bottom-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+                    -moz-border-bottom-right-radius: 6px;
+                    -webkit-border-bottom-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                }
+
+                &:hover {
+                    background: rgba(0, 153, 255, 0.1);
+                }
+            }
+
+            #store_list {
+                #google #icon {
+                    float: left;
+                    margin-left: 22px;
+                    margin-top: 17px;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/img_google_big.png');
+                }
+
+                #apple #icon {
+                    float: left;
+                    margin-left: 22px;
+                    margin-top: 17px;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/img_apple_big.png');
+                }
+
+                #name {
+                    float: left;
+                    margin-left: 5px;
+                    margin-top: 20px;
+                    font-size: 14px;
+                }
+
+                .store_item.selected #check {
+                    float: left;
+                    margin-left: 10px;
+                    margin-top: 20px;
+                    width: 14px;
+                    height: 14px;
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_filter_check.png');
+                }
+            }
+
+            #country_list {
+                .country_item.selected #check {
+                    float: left;
+                    margin-left: 10px;
+                    margin-top: 20px;
+                    width: 14px;
+                    height: 14px;
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_filter_check.png');
+                }
+
+                #name {
+                    float: left;
+                    margin-left: 22px;
+                    margin-top: 20px;
+                    font-size: 14px;
+                }
+            }
+
+            #category_list {
+                #name {
+                    float: left;
+                    margin-left: 22px;
+                    margin-top: 20px;
+                    font-size: 14px;
+
+                    .categoryLink {
+                        display: none;
+                    }
+                }
+
+                .has_sub #name {
+                    margin-left: 10px;
+                }
+
+                .category_item {
+                    &.has_sub,
+                    &.upper {
+                        background: #f8f9fa;
+                    }
+
+                    &:hover {
+                        background: rgba(0, 153, 255, 0.1);
+                    }
+                }
+
+                #sub {
+                    float: left;
+                    margin-left: 22px;
+                    margin-top: 22px;
+                    width: 8px;
+                    height: 8px;
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_filter_sub.png');
+                }
+
+                .category_item {
+                    &.selected #check {
+                        float: left;
+                        margin-left: 10px;
+                        margin-top: 20px;
+                        width: 14px;
+                        height: 14px;
+                        background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_filter_check.png');
+                    }
+
+                    #selecter {
+                        float: right;
+                        margin-right: 29px;
+                        margin-top: 20px;
+                        width: 14px;
+                        height: 14px;
+                        background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_filter_arrow_open_nor.png') !important;
+
+                        &:hover {
+                            background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_filter_arrow_open_pre.png') !important;
+                        }
+                    }
+
+                    &.close #selecter {
+                        background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_filter_arrow_close_nor.png') !important;
+
+                        &:hover {
+                            background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_filter_arrow_close_pre.png') !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /**********  일간 포함  **************/
+
+    /*
+.page_filter #dateType3 #daily:hover{
+	border-left: 1px solid #0099ff;
+}
+
+.page_filter #dateType3 #weekly:hover{
+	border-left: 1px solid #0099ff;
+}
+
+.page_filter #dateType3 #monthly:hover{
+	border-right: 1px solid #0099ff;
+}
+*/
+
+    /**************************/
+
+    /*
+.page_filter .subfilter > ul li.item.selected {
+	border: #0099ff 1px solid; 
+}
+
+.page_filter .subfilter > ul li.item.selected #name {
+	color: #0099ff;
+	font-weight: 600;
+}
+
+.page_filter .subfilter > ul li.item.selected #selecter {
+	background-image: url("https://www.wiseapp.co.kr/resources/img/common/ico_filter_arrow_close_nor.png") !important;
+}
+
+.page_filter .subfilter > ul li.item.selected #selecter:hover {
+	background-image: url("https://www.wiseapp.co.kr/resources/img/common/ico_filter_arrow_close_pre.png") !important;
+}
+*/
+
+    /** diable 추가  **/
+
+    /*****/
+
+    /***********  filter   *************/
+
+    /***********  progress   *************/
+
+    .progressbar {
+        /*
+  width: 100%;
+  height: 50px;
+  */
+        width: 150px;
+        height: 10px;
+    }
+
+    /***********  progress   *************/
+
+    /***********  chart   *************/
+
+    .chart_serial {
+        width: 100%;
+        height: 300px;
+    }
+
+    .chart_line {
+        width: 100%;
+        height: 400px;
+    }
+
+    .chart_pie_wrapper {
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+    }
+
+    .chart_pie {
+        width: 100%;
+        height: 350px;
+    }
+
+    .chart_pie_label ul li {
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        -ms-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .chart_serial_test {
+        top: 11px;
+        left: 0px;
+        width: 492px;
+        height: 301px;
+        position: absolute;
+        z-index: 1800;
+        background: url('https://www.wiseapp.co.kr/resources/img/common/img_main_category_bg.png');
+    }
+
+    /***********  chart   *************/
+
+    /***********  table hader fixed   *************/
+
+    .tbl_hader_fixed {
+        position: fixed !important;
+        top: 116px;
+        min-width: 984px;
+        z-index: 1800;
+
+        &.noti {
+            top: 176px;
+        }
+    }
+
+    /***********  table hader fixed   *************/
+
+    .post .more #btn_more {
+        display: none;
+    }
+
+    .btn_info {
+        cursor: pointer;
+        display: inline-table;
+        position: relative;
+        width: 16px;
+        height: 22px;
+        background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_info_nor.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 16px 22px;
+    }
+
+    .button_box {
+        clear: both;
+        display: table;
+        text-align: center;
+        width: 100%;
+        position: relative;
+
+        .button_box_cell {
+            display: table-cell;
+
+            &.pa_left {
+                padding-left: 25px;
+                padding-right: 10px;
+            }
+
+            &.pa_right {
+                padding-left: 10px;
+                padding-right: 25px;
+            }
+
+            &.pa_center {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+            &.pa_left .button,
+            &.pa_right .button,
+            &.pa_center .button {
+                display: block;
+            }
+        }
+    }
+
+    .iwalert {
+        z-index: 19001;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        .body_wrapper {
+            width: 100%;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .body {
+            margin-top: 220px;
+            display: inline-block;
+            position: relative;
+
+            .bg {
+                background-color: #ffffff;
+                opacity: 0.95;
+                position: absolute;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                bottom: 0px;
+                box-shadow: 0px 2px 4px 2px rgba(150, 150, 150, 0.5);
+            }
+
+            .content {
+                margin: 50px 50px 50px 50px;
+                font-size: 14px;
+                color: #3b4c66;
+                opacity: 0.99;
+                line-height: 20px;
+                max-width: 800px;
+            }
+
+            .btn_ok {
+                font-size: 14px;
+                color: #0099ff;
+                opacity: 0.99;
+                line-height: 60px;
+                cursor: pointer;
+                border-top: 1px solid #e7e8ea;
+
+                &:hover {
+                }
+            }
+
+            .btn_close {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                cursor: pointer;
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_news_close_nor.png');
+                background-repeat: no-repeat;
+                width: 27px;
+                height: 27px;
+
+                &:hover {
+                    background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_news_close_pre.png');
+                }
+            }
+        }
+    }
+
+    .iwalert2 {
+        z-index: 19001;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        .body_wrapper {
+            width: 100%;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .body {
+            margin-top: 220px;
+            display: inline-block;
+            position: relative;
+            min-width: 390px;
+            min-height: 260px;
+
+            .bg {
+                background-color: #ffffff;
+                opacity: 0.95;
+                position: absolute;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                bottom: 0px;
+                box-shadow: 0px 2px 4px 2px rgba(150, 150, 150, 0.5);
+            }
+
+            .content {
+                margin: 50px 50px 50px 50px;
+                font-size: 14px;
+                color: #3b4c66;
+                opacity: 0.99;
+                line-height: 22px;
+            }
+
+            .title {
+                color: #2c3749;
+                opacity: 0.99;
+                line-height: 26px;
+                margin-top: 40px;
+                font-size: 26px;
+            }
+
+            .button_box {
+                height: 50px;
+                opacity: 0.99;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                clear: both;
+                display: table;
+                width: 100%;
+
+                .button_box_cell {
+                    display: table-cell;
+
+                    .button,
+                    .button_cancel {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .button {
+        color: #ffffff;
+        background-color: #0099ff;
+        border: none;
+        min-width: 100px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: -1px;
+        cursor: pointer;
+        -moz-border-radius: 25px/50%;
+        -webkit-border-radius: 25px/50%;
+        border-radius: 25px/50%;
+        text-align: center;
+        display: inline-block;
+
+        &:hover {
+            background-color: #0089e6;
+        }
+    }
+
+    .button_cancel {
+        color: #ffffff;
+        background-color: #afc4d3;
+        border: none;
+        min-width: 100px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: -1px;
+        cursor: pointer;
+        -moz-border-radius: 25px/50%;
+        -webkit-border-radius: 25px/50%;
+        border-radius: 25px/50%;
+        text-align: center;
+        display: inline-block;
+
+        &:hover {
+            background-color: #9eb1be;
+        }
+    }
+
+    .bold_color {
+        color: #0099ff;
+    }
+
+    .ctbl {
+        clear: both;
+        display: table;
+    }
+
+    .ctbl_cell {
+        display: table-cell;
+    }
+
+    .checkbox {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        background-image: url('https://www.wiseapp.co.kr/resources/img/0516/btn_check_nor.png');
+        background-repeat: no-repeat;
+        background-size: 24px 24px;
+        background-position: center;
+        float: left;
+        margin-right: 5px;
+
+        &.checked {
+            background-image: url('https://www.wiseapp.co.kr/resources/img/0516/btn_check_foc.png');
+        }
+    }
+
+    .radio {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        background-image: url('https://www.wiseapp.co.kr/resources/img/1214/btn_radio_off.png');
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        background-position: center;
+        float: left;
+        margin-right: 5px;
+
+        &.checked {
+            background-image: url('https://www.wiseapp.co.kr/resources/img/1214/btn_radio_on.png');
+        }
+    }
+
+    .btn_like {
+        border: 1px solid rgba(194, 201, 209, 1);
+        border-radius: 13px;
+        line-height: 25px;
+        font-size: 12px;
+        cursor: pointer;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: inline-block;
+
+        &.big {
+            border-radius: 18px;
+            line-height: 35px;
         }
 
         .text {
-            float: left;
-            font-size: 11px;
-            color: #56687f;
-            opacity: 0.6;
+            color: rgba(86, 104, 127, 0.8);
+        }
+
+        .count {
+            color: rgba(3, 142, 234, 0.8);
             margin-left: 5px;
-            line-height: 14px;
         }
 
-        &:hover .text {
-            opacity: 0.8;
+        &:hover {
+            border: 1px solid rgba(175, 181, 189, 1);
+
+            .text {
+                color: rgba(86, 104, 127, 1);
+            }
+
+            .count {
+                color: rgba(3, 142, 234, 1);
+            }
         }
 
-        .logo {
-            height: 13px;
-            width: 9px;
-            float: left;
+        &.selected {
+            background-color: #0099ff;
+            border: 1px solid #0099ff;
+
+            .text {
+                color: rgba(255, 255, 255, 1);
+            }
+
+            .count {
+                color: rgba(255, 255, 255, 0.8);
+            }
+        }
+    }
+
+    /*
+	스크롤
+*/
+
+    .scroll_list {
+        max-height: 506px !important;
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+
+        &::-webkit-scrollbar {
+            -webkit-appearance: none !important;
+
+            &:vertical {
+                width: 5px !important;
+            }
+        }
+
+        &::-webkit-scrollbar-button {
+            &:start:decrement,
+            &:end:increment {
+                display: block !important;
+                height: 5px !important;
+                border: 0 !important;
+            }
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(59, 76, 102, 0.5) !important;
+            -webkit-border-radius: 2.5px !important;
+            border-radius: 2.5px !important;
+        }
+    }
+
+    /** 유료 가입안내  **/
+
+    #info_pay_view {
+        width: 1024px;
+        margin: 0 auto;
+        height: 44px;
+
+        /*margin-top: 30px;*/
+
+        #info_pay_box {
+            background-color: #dde3e7;
+            line-height: 44px;
+            height: 44px;
+            width: 984px;
+            margin: 15px auto;
+            border-radius: 6px;
+
+            #left_box {
+                float: left;
+            }
+
+            #right_box {
+                float: right;
+
+                div {
+                    float: left;
+                }
+            }
+
+            #text {
+                font-size: 14px;
+                color: #56687f;
+                float: left;
+                margin-left: 10px;
+            }
+
+            #info_icon {
+                width: 20px;
+                height: 44px;
+                background-image: url('https://www.wiseapp.co.kr/resources/img/1214/ico_mark.png');
+                background-repeat: no-repeat;
+                background-size: 20px 20px;
+                background-position: center;
+                float: left;
+                margin-left: 15px;
+            }
+
+            #btn_go_free {
+                padding: 0 30px;
+                font-weight: 600;
+                color: #ffffff;
+                background-color: #557096;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #4d6587;
+                }
+            }
+
+            #btn_go_pay_info {
+                padding: 0 30px;
+                font-weight: 600;
+                color: #ffffff;
+                background-color: #f7517c;
+                cursor: pointer;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+
+                &:hover {
+                    background-color: #df4970;
+                }
+            }
+        }
+    }
+
+    /*유료 사용자 안내*/
+
+    .info_free_user_box {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+
+        /*
+  background-color: rgba(255,255,255,0.7);
+  */
+        border-radius: 6px;
+        overflow: hidden;
+
+        .info_box_wrapper {
+            display: table;
+            margin: 0 auto;
+            height: 100%;
+
+            .info_box {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+        }
+
+        .info_text {
+            font-size: 16px;
+            color: #56687f;
+            line-height: 20px;
+        }
+
+        .stat_error_icon {
+            width: 100%;
+            height: 60px;
+            background-image: url('https://www.wiseapp.co.kr/resources/img/0404/ic_stats_error.png');
             background-repeat: no-repeat;
-            background-size: 9px 13px;
+            background-size: 65px 60px;
             background-position: center;
-            background-image: url('https://www.wiseapp.co.kr/resources/img/0912/ico_footer_mobile_nor.png');
+            margin-bottom: 20px;
+            margin-top: 30px;
         }
 
-        &:hover .logo {
-            background-image: url('https://www.wiseapp.co.kr/resources/img/0912/ico_footer_mobile_pre.png');
+        .btn_go_free {
+            height: 55px;
+            border-radius: 6px;
+            background-color: #0099ff;
+            padding: 0 40px;
+            font-weight: 600;
+            color: #ffffff;
+            cursor: pointer;
+            line-height: 55px;
+            display: inline-block;
+            margin-top: 30px;
+            font-size: 14px;
+
+            &:hover {
+                background-color: #0089e6;
+            }
+        }
+
+        .btn_go_pay_info {
+            height: 55px;
+            border-radius: 6px;
+            background-color: #ff5c86;
+            padding: 0 40px;
+            font-weight: 600;
+            color: #ffffff;
+            cursor: pointer;
+            line-height: 55px;
+            display: inline-block;
+            margin-top: 30px;
+            font-size: 14px;
+
+            &:hover {
+                background-color: #e65379;
+            }
         }
     }
 
-    #footer {
-        #footer_menu .line {
-            padding: 1.5px 12px 1.5px 12px;
-            cursor: default;
+    /*square button*/
+
+    .square_button {
+        padding: 17px 25px;
+        color: #ffffff;
+        border-radius: 6px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600;
+        display: inline-block;
+        float: left;
+
+        > div {
             float: left;
+            display: inline-block;
+        }
 
-            div {
-                width: 1px;
-                height: 9px;
-                background-color: rgba(86, 104, 127, 0.5);
+        .img_arrow {
+            width: 17px;
+            height: 18px;
+            background-image: url('https://www.wiseapp.co.kr/resources/img/common/go_arrow.png');
+            background-repeat: no-repeat;
+            background-size: 17px 17px;
+            background-position: center;
+            margin-left: 7px;
+        }
+
+        &.pink {
+            background-color: #ee3162;
+
+            &:hover {
+                background-color: #d72c58;
+            }
+        }
+    }
+
+    .info_free_user_box .info_text.primium {
+        color: #f7517c;
+        font-weight: 600;
+    }
+
+    /**********  분기 포함  **************/
+
+    .page_filter {
+        #dateType4 {
+            float: right;
+            width: auto;
+            height: 54px;
+            position: relative;
+
+            > div {
+                float: left;
+                font-size: 14px;
+                text-align: center;
+                height: 100%;
+                width: 108px;
+                position: relative;
+                border: 1px solid #e1e3e5;
+                background-color: #ffffff;
+                -moz-border-radius: 6px;
+                -webkit-border-radius: 6px;
+                border-radius: 6px;
+
+                /*position: relative;
+      height: 54px;*/
+
+                cursor: pointer;
+                margin-left: -1px;
+                z-index: 0;
+
+                p {
+                    line-height: 54px;
+                }
+            }
+
+            #daily {
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+
+            #weekly,
+            #monthly {
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+
+            #quarterly {
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+
+            &:hover #weekly {
+                border-right: 1px solid #0099ff;
+            }
+
+            > div {
+                &:hover {
+                    color: #0099ff;
+                    border: 1px solid #0099ff;
+                    z-index: 1;
+                }
+
+                &.selected p {
+                    color: #0099ff;
+                }
             }
         }
 
-        #co_info {
-            position: absolute;
-            left: 280px;
-            top: 27px;
+        #dateType6 {
+            float: right;
+            width: auto;
+            height: 54px;
+            position: relative;
 
-            div {
-                line-height: 19px;
+            > div {
+                float: left;
+                font-size: 14px;
+                text-align: center;
+                height: 100%;
+                width: 92px;
+                position: relative;
+                border: 1px solid #e1e3e5;
+                background-color: #ffffff;
+                -moz-border-radius: 6px;
+                -webkit-border-radius: 6px;
+                border-radius: 6px;
+                cursor: pointer;
+                margin-left: -1px;
+                z-index: 0;
+
+                p {
+                    line-height: 54px;
+                }
+            }
+
+            .item {
+                &.left {
+                    border-top-right-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                }
+
+                &.inner {
+                    border-top-right-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                    border-top-left-radius: 0px;
+                    border-bottom-left-radius: 0px;
+                }
+
+                &.right {
+                    border-top-left-radius: 0px;
+                    border-bottom-left-radius: 0px;
+                }
+            }
+
+            &:hover #weekly {
+                border-right: 1px solid #0099ff;
+            }
+
+            > div {
+                &:hover {
+                    color: #0099ff;
+                    border: 1px solid #0099ff;
+                    z-index: 1;
+                }
+
+                &.selected p {
+                    color: #0099ff;
+                }
+            }
+        }
+    }
+
+    /**************************/
+
+    /**********  연간 포함  **************/
+
+    /**************************/
+
+    .iwalert .body .content {
+        .btn_notice {
+            padding: 14px 20px 0px 20px;
+            font-weight: 600;
+            color: #ffffff;
+            background-color: #0099ff;
+            cursor: pointer;
+            border-radius: 6px;
+            width: 100px;
+            height: 40px;
+            margin: auto;
+            text-align: center;
+        }
+
+        #btn_go_pay_info {
+            background-color: #f7517c !important;
+
+            &:hover {
+                background-color: #df4970 !important;
+            }
+        }
+    }
+
+    /****** retail help popup **************/
+
+    #retail_help_view {
+        display: none;
+
+        .panel {
+            width: 800px;
+            height: 400px;
+
+            .left_box {
+                float: left;
+                background-color: #f4f9fd;
+                width: 340px;
+                height: 100%;
+            }
+
+            .right_box {
+                float: left;
+                background-color: #ffffff;
+                height: 400px;
+                width: 460px;
+                position: relative;
+            }
+        }
+
+        .right_box .content_box {
+            position: relative;
+            height: 350px;
+            overflow-y: auto;
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        .panel .right_box .content {
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+        }
+
+        .title_box {
+            margin-top: 50px;
+            margin-left: 27px;
+            display: inline-block;
+
+            .logo {
+                float: left;
+                width: 90px;
+                height: 18px;
+                background-repeat: no-repeat;
+                background-size: 90px 15px;
+                background-image: url(https://www.wiseapp.co.kr/resources/img/helpview/help_logo.png);
+                background-position: center;
+            }
+
+            .text {
+                float: left;
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+
+        .index_list {
+            margin-top: 25px;
+            margin-left: 27px;
+            width: 285px;
+            border-top: 1px solid #4a5a6f;
+
+            .item {
+                .header {
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 14px;
+                    position: relative;
+                    cursor: pointer;
+
+                    .text1 {
+                        /*color: rgba(0,0,0,0.6);*/
+                        float: left;
+                        font-weight: 600;
+                        font-size: 18px;
+
+                        + .text1 {
+                            margin-left: 5px;
+                        }
+                    }
+
+                    &:hover .text1 {
+                        color: #0099ff;
+                    }
+                }
+
+                + .item {
+                    border-top: 1px solid #d9d9d9;
+                }
+
+                &.selected .header .text1 {
+                    color: rgba(0, 0, 0, 1);
+                }
+
+                .header {
+                    .text1.name {
+                        max-width: 102px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+
+                    .btn_open {
+                        position: absolute;
+                        top: 0px;
+                        right: 15px;
+                        height: 50px;
+                        width: 14px;
+                        background-repeat: no-repeat;
+                        background-size: 14px 8px;
+                        background-position: center;
+                        background-image: url(https://www.wiseapp.co.kr/resources/img/helpview/btn_open.png);
+                        cursor: pointer;
+                    }
+                }
+
+                &.selected .header .btn_open {
+                    background-image: url(https://www.wiseapp.co.kr/resources/img/helpview/btn_close.png);
+                }
+
+                .sub_index_list {
+                    margin-bottom: 15px;
+                    display: none;
+                }
+
+                &.selected .sub_index_list {
+                    display: block;
+                }
+
+                .sub_index_list .sub_item {
+                    margin-left: 15px;
+                    font-size: 14px;
+                    color: #666666;
+                    line-height: 30px;
+                    cursor: pointer;
+
+                    &.selected {
+                        color: #0099ff;
+                        font-weight: 600;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .right_box {
+            .title_line {
+                background-color: #0099ff;
+                width: 28px;
+                height: 5px;
+            }
+
+            .title_1 {
+                font-size: 16px;
+                font-weight: 600;
+                color: #000000;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .text {
+                font-size: 12px;
+                color: rgba(0, 0, 0, 0.8);
+                margin-top: 6px;
+                line-height: 18px;
+            }
+
+            .himg {
+                margin-top: 12px;
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            .text_1 {
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.8);
+                margin-top: 6px;
+                line-height: 18px;
+            }
+
+            .title_2 {
+                font-size: 14px;
+                font-weight: 600;
+                color: rgba(0, 0, 0, 1);
+                margin-top: 40px;
+                margin-bottom: 15px;
+            }
+
+            .content_box {
+                #div_search {
+                    /*
+        	position: absolute;
+            top: 20px;
+            right: 0px;
+            */
+
+                    .img {
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        margin: 15px 0px 0px 18px;
+                        zoom: 1;
+                        background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_search_s_pre.png');
+                    }
+
+                    #search_retail {
+                        box-sizing: border-box;
+                        display: block;
+                        margin-bottom: 10px;
+                        padding-left: 46px;
+                        padding-right: 46px;
+                        padding-top: 0px;
+                        border: #e1e1e2 solid 2px;
+                        -moz-border-radius: 25px/50%;
+                        -webkit-border-radius: 25px/50%;
+                        border-radius: 25px/50%;
+                        min-width: 320px;
+                        min-height: 50px;
+                        font-size: 1.333em;
+                        background-color: #ffffff;
+                        outline: none;
+                        color: #0099ff;
+                    }
+
+                    &:hover #search_retail,
+                    #search_retail:focus,
+                    &.focus #search_retail {
+                        border: #47b5ff solid 2px;
+                    }
+
+                    input {
+                        &[type='reset'] {
+                            background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_search_app_s_del_nor.png');
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            height: 20px;
+                            width: 20px;
+                            border: none;
+                            background-color: transparent;
+                            cursor: pointer;
+                            position: absolute;
+                            top: 14px;
+                            right: 105px;
+
+                            &:hover {
+                                background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_search_app_s_del_pre.png');
+                            }
+                        }
+
+                        &[type='text']:invalid + input[type='reset'] {
+                            display: none;
+                        }
+                    }
+                }
+
+                #div_search_result {
+                    position: absolute;
+                    top: 60px;
+                    left: 50px;
+                    border-radius: 9px;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    background: #ffffff;
+                    width: 320px;
+                    min-height: 86px;
+                    max-height: 254px;
+                    box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.2);
+                    overflow: hidden;
+                    display: none;
+                    z-index: 1901;
+                    zoom: 1;
+
+                    .list {
+                        position: relative;
+                        min-height: 44px;
+                        max-height: 352px;
+                        overflow: hidden;
+                    }
+
+                    .ui-widget {
+                        font-family: 'Nanum Gothic', sans-serif;
+                    }
+
+                    .ui-autocomplete {
+                        color: #2b3d52;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        width: 210px;
+                        max-height: 352px;
+                        overflow-y: auto;
+                        overflow-x: hidden;
+                        border: 0px;
+                        position: relative;
+
+                        &::-webkit-scrollbar {
+                            -webkit-appearance: none;
+
+                            &:vertical {
+                                width: 5px;
+                            }
+                        }
+
+                        &::-webkit-scrollbar-button {
+                            &:start:decrement,
+                            &:end:increment {
+                                display: block;
+                                height: 5px;
+                                border: 0;
+                            }
+                        }
+
+                        &::-webkit-scrollbar-thumb {
+                            background-color: rgba(59, 76, 102, 0.5);
+                            -webkit-border-radius: 2.5px;
+                            border-radius: 2.5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* IE 6 doesn't support max-height
+   * we use height instead, but this forces the menu to always be this tall
+   */
+
+    *
+        html
+        #retail_help_view
+        .right_box
+        .content_box
+        #div_search_result
+        .ui-autocomplete {
+        height: 100px;
+    }
+
+    #retail_help_view {
+        .right_box .content_box #div_search_result {
+            .ui-menu .ui-menu-item {
+                margin: 0;
+                padding: 0;
+                zoom: 1;
+                width: 100%;
+                list-style-image: none;
+                min-height: 44px;
+
+                .ui-corner-all {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+                a {
+                    color: #000000;
+                    text-decoration: none;
+                    display: block;
+                    line-height: 1.5;
+                    zoom: 1;
+                    font-weight: 100;
+                    cursor: pointer;
+                }
+            }
+
+            .ui-widget {
+                font-family: 'Nanum Gothic', sans-serif;
+            }
+
+            .ui-state-focus,
+            .ui-widget-content .ui-state-focus,
+            .ui-widget-header .ui-state-focus {
+                border: 0px;
+                background: rgba(0, 153, 255, 0.1);
+                font-weight: 100;
+                color: #212121;
+            }
+
+            .autocomplete-link {
+                position: relative;
+                display: block;
+                padding: 11px 15px 12px 14px;
+                box-sizing: border-box;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            .autocomplete-details {
+                float: left;
+                width: 320px;
+                height: 20px;
+                margin-right: 8px;
+                padding-top: 1px;
+            }
+
+            .autocomplete-check {
+                float: left;
+                height: 20px;
+                width: 20px;
+                background-size: 100%;
+                background-image: url('https://www.wiseapp.co.kr/resources/img/0706/ico_detail_selected.png');
+            }
+
+            .autocomplete-name {
+                overflow: hidden;
                 text-align: left;
-                color: rgba(86, 104, 127, 0.5);
+                font-family: 'Nanum Gothic', sans-serif;
+                font-size: 12px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+
+                span {
+                    color: #0099ff;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .content_box {
+            .btn_box {
+                text-align: center;
+            }
+
+            .btn_retail_demo {
+                height: 55px;
+                border-radius: 6px;
+                background-color: #0099ff;
+                padding: 0 40px;
+                font-weight: 600;
+                color: #ffffff;
+                cursor: pointer;
+                line-height: 55px;
+                display: inline-block;
+                margin: 30px auto;
+                font-size: 14px;
+
+                &:hover {
+                    background-color: #0089e6;
+                }
             }
         }
     }
-}
 
-#goTop_view #top {
-    position: absolute;
-    bottom: -76px;
-    right: -41px;
-    width: 42px;
-    height: 42px;
-    background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_top_nor.png');
-    cursor: pointer;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    #retail_demo_sample_view {
+        &.popup .panel {
+            width: 782px;
+            height: 360px;
+            margin: 130px auto 0;
+        }
 
-    &:hover {
-        background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_top_pre.png');
+        #paid_error {
+            text-align: center;
+            font-size: 16px;
+            color: #f94070;
+            font-weight: 600;
+            margin-top: -10px;
+            margin-bottom: 16px;
+        }
+
+        .panel_content {
+            height: 252px;
+        }
+
+        #paid_terms_box {
+            background-color: #f4f9fd;
+            width: 586px;
+            height: 60px;
+            margin: 5px auto 0;
+            overflow-y: auto;
+            padding: 20px;
+            font-size: 12px;
+            color: rgba(44, 55, 73, 0.8);
+            line-height: 20px;
+        }
+
+        .checkbox + .chk_text {
+            line-height: 24px;
+            font-size: 14px;
+            color: #2c3749;
+            font-weight: 600;
+            float: left;
+        }
+
+        .chk_text + .checkbox {
+            margin-left: 20px;
+        }
+
+        .terms_chk_box {
+            margin: 10px 20px;
+            height: 24px;
+        }
+
+        .desc.invoice {
+            float: right;
+            padding-right: 19px;
+        }
+
+        .terms_chk_box .right_box {
+            float: right;
+        }
+
+        #option_box {
+            margin: 0px 0px 10px 0px;
+
+            .line {
+                display: inline-block;
+                width: 660px;
+
+                div {
+                    line-height: 40px;
+                    float: left;
+                }
+
+                .radio {
+                    height: 40px;
+                }
+
+                .text {
+                    + .radio {
+                        margin-left: 30px;
+                    }
+
+                    color: rgba(44, 55, 73, 0.8);
+                    font-size: 14px;
+                }
+
+                .subtext {
+                    color: rgba(44, 55, 73, 0.8);
+                    font-size: 12px;
+                }
+            }
+
+            .desc {
+                margin-left: 0px;
+            }
+        }
+    }
+
+    #retail_demo_sample_view {
+        #option_box .desc .text {
+            font-size: 12px;
+            color: #2c3749;
+            line-height: 16px;
+        }
+
+        .bold_color {
+            color: #0099ff;
+        }
+
+        #option_box .line2 {
+            margin-top: 0px;
+            padding-left: 30px;
+
+            input {
+                margin-left: 10px;
+                min-width: 120px;
+                width: 120px;
+                min-height: 24px;
+                font-size: 13px;
+                color: #56687f;
+                border-radius: 3px;
+                border: #c9d5e0 solid 1px;
+                padding: 0px 10px;
+            }
+        }
+    }
+
+    #total_container.en_US #retail_demo_sample_view #option_box .line2 input {
+        margin-left: 0px;
+        min-width: 110px;
+        width: 110px;
+    }
+
+    #retail_demo_sample_view #option_box .line2 .ipttitle {
+        font-size: 14px;
+        font-weight: 600;
+        color: #2c3749;
+        line-height: 44px;
+    }
+
+    #retail_demo_sample_view #option_box .line2 {
+        input + .ipttitle {
+            margin-left: 10px;
+        }
+
+        #company.ipttitle {
+            margin-left: 0px;
+        }
+    }
+
+    #retail_demo_sample_view #result_box {
+        background-color: #f4f9fd;
+        width: 626px;
+        height: 60px;
+        margin: 0px auto 0;
+
+        .right_box {
+            float: right;
+            margin-right: 20px;
+            letter-spacing: -0.8px;
+
+            div {
+                float: left;
+            }
+        }
+
+        .nor_text {
+            color: #2c3749;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 60px;
+        }
+
+        .rst_text {
+            color: #0099ff;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 60px;
+        }
+    }
+
+    #retail_demo_sample_view {
+        #result_box {
+            .icon {
+                margin: 0px 5px;
+                width: 12px;
+                height: 60px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 12px 12px;
+                text-align: center;
+            }
+
+            .plus.icon {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/1214/ico_cal_addition.png');
+            }
+
+            .minus.icon {
+                background-image: url('https://www.wiseapp.co.kr/resources/img/1214/ico_cal_subtraction.png');
+            }
+
+            .equal.icon {
+                margin: 0px 10px;
+                background-image: url('https://www.wiseapp.co.kr/resources/img/1214/ico_cal_equals.png');
+            }
+        }
+
+        .payment_button {
+            margin: 0 auto;
+            width: 220px;
+            padding-top: 17px;
+            padding-bottom: 17px;
+            color: #ffffff;
+            border-radius: 24px;
+            cursor: pointer;
+            background-color: #0099ff;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+
+            &:hover {
+                background-color: #0089e6;
+            }
+
+            .text {
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 600;
+            }
+        }
+
+        #btn_box {
+            margin: 30px 0px;
+        }
+
+        .red {
+            color: #ee3162 !important;
+        }
+
+        &.popup {
+            .panel .title {
+                line-height: 60px;
+                font-size: 20px;
+                font-weight: 600;
+                color: #2a4e6a;
+                position: relative;
+                margin-top: 60px;
+            }
+
+            .btn_close {
+                top: 15px;
+            }
+        }
+
+        #option_box .line input {
+            margin-left: 10px;
+            min-width: 120px;
+            width: 250px;
+            min-height: 24px;
+            font-size: 13px;
+            color: #56687f;
+            border-radius: 3px;
+            border: #c9d5e0 solid 1px;
+            padding: 0px 10px;
+            margin-top: 8px;
+        }
+
+        .desc.terms {
+            margin-right: 40px;
+            text-align: center;
+        }
+
+        #option_box .text {
+            line-height: 58px;
+            color: #2a4e6a;
+            font-size: 15px;
+            width: 96px;
+            margin-right: 16px;
+        }
+    }
+
+    #total_container.en_US #retail_demo_sample_view #option_box .text {
+        width: 116px;
+    }
+
+    #retail_demo_sample_view #option_box {
+        table {
+            margin-top: 42px;
+
+            tr {
+                vertical-align: top;
+            }
+        }
+
+        input {
+            box-sizing: border-box;
+            display: block;
+            margin-top: 9px;
+            margin-right: 30px;
+            height: 40px;
+            padding: 0 14px;
+            border: #b3c7d3 solid 2px;
+            border-radius: 20px;
+            background-color: #ffffff;
+            color: #b3c7d3;
+            font-size: 12px;
+        }
+
+        .desc {
+            font-size: 12px;
+            color: rgba(62, 90, 112, 0.8);
+            margin-top: 8px;
+        }
+
+        input {
+            &:hover,
+            &:focus,
+            &.focus {
+                outline: none;
+                color: #0099ff;
+                border: #0099ff solid 2px;
+            }
+
+            &::placeholder {
+                color: #97b0c0;
+                font-size: 13px;
+            }
+        }
+
+        #reqName {
+            width: 150px;
+        }
+
+        #reqCompany {
+            width: 182px;
+        }
+
+        #reqEmail,
+        #reqTel {
+            width: 240px;
+        }
     }
 }
-/***********  bottom   *************/

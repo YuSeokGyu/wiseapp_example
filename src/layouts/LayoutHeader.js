@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class LayoutHeader extends Component {
     constructor(props) {
@@ -22,6 +23,7 @@ class LayoutHeader extends Component {
         const { customer, appStore } = this.state;
         const { breadcrumb } = this.props;
         const pathname = window.location.pathname;
+        console.log(breadcrumb);
         const navName = breadcrumb.filter(val => val.path === pathname)[0].name;
         return (
             <div id="top_container">
@@ -256,14 +258,14 @@ class LayoutHeader extends Component {
                                                     <li className="title">
                                                         대시보드
                                                     </li>
-                                                    <a href="/dashboard/">
+                                                    <Link to="/dashboard">
                                                         <li
                                                             id="dashboard"
                                                             className="list"
                                                         >
                                                             전체 대시보드
                                                         </li>
-                                                    </a>
+                                                    </Link>
                                                     <a href="/dashboard/myapp/">
                                                         <li
                                                             id="myapp"
