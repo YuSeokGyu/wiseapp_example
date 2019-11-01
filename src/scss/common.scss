@@ -1,0 +1,248 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: block;
+    font-family: 'Nanum Gothic';
+    font-size: 12px;
+    text-align: left;
+    font-weight: 100;
+    background: #dadfe4;
+}
+/***********  main view   *************/
+#content_view,
+#app_hst_view,
+#bottom_view,
+#banner_view,
+#notice_view,
+#goTop_view,
+#page_header_view {
+    clear: both;
+    width: 1024px;
+    margin: 0 auto;
+    zoom: 1;
+}
+
+#gnb_view {
+    position: relative;
+    z-index: 1900;
+}
+
+#content_view {
+    padding-bottom: 90px;
+}
+
+#bottom_view {
+    position: relative;
+    height: 120px;
+    zoom: 1;
+}
+
+#goTop_view {
+    position: relative;
+    zoom: 1;
+}
+
+#page_header_wrapper {
+    min-height: 40px;
+}
+
+#rank_content_wrapper {
+    background: #ffffff;
+}
+
+#goTop_wrapper {
+    position: fixed;
+    bottom: 104px;
+    right: 0px;
+    z-index: 1800;
+    width: 100%;
+    display: none;
+}
+
+/***********  main view   *************/
+/***********  bottom   *************/
+#bottom_wrapper {
+    position: relative;
+    width: 100%;
+    top: 0;
+    /*background-color: rgba(86,104,127,0.1)*/
+    background-color: #dadfe4;
+}
+
+#bottom_view {
+    #footer {
+        padding-top: 30px;
+    }
+}
+
+#bottom_view {
+    #footer {
+        div {
+            vertical-align: bottom;
+        }
+    }
+}
+
+#bottom_view {
+    #footer {
+        .ci {
+            float: left;
+            width: 84px;
+            height: 13px;
+            margin: 0px 0px 0px 20px;
+            background-image: url('https://www.wiseapp.co.kr/resources/img/190621/img_logo_footer.png');
+        }
+    }
+}
+
+#bottom_view {
+    #footer {
+        .ci_retail {
+            float: left;
+            width: 105px;
+            height: 13px;
+            margin: 0px 0px 0px 30px;
+            background-image: url('https://www.wiseapp.co.kr/resources/img/190621/img_logo_footer_retail.png');
+        }
+    }
+}
+
+#bottom_view {
+    #footer {
+        .copyright {
+            float: left;
+            margin-top: 1px;
+            padding-left: 26px;
+            color: rgba(86, 104, 127, 0.5);
+        }
+    }
+}
+
+#bottom_view {
+    #footer {
+        #gnb_view {
+            #menu.sub {
+                float: right;
+            }
+        }
+    }
+}
+
+#bottom_view {
+    #footer {
+        #footer_menu {
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 30px;
+        }
+    }
+}
+
+#bottom_view {
+    #footer #footer_menu {
+        ul {
+            display: inline-block;
+        }
+
+        .item {
+            color: rgba(86, 104, 127, 0.5);
+            font-size: 12px;
+            float: left;
+            cursor: pointer;
+
+            &:hover {
+                color: rgba(86, 104, 127, 0.8);
+            }
+        }
+    }
+
+    #go_mobile {
+        float: left;
+        margin-left: 20px;
+        border: 1px solid #c2c8d0;
+        padding: 2px 5px;
+        display: inline-block;
+        cursor: pointer;
+
+        &:hover {
+            border: 1px solid #919eae;
+        }
+
+        .text {
+            float: left;
+            font-size: 11px;
+            color: #56687f;
+            opacity: 0.6;
+            margin-left: 5px;
+            line-height: 14px;
+        }
+
+        &:hover .text {
+            opacity: 0.8;
+        }
+
+        .logo {
+            height: 13px;
+            width: 9px;
+            float: left;
+            background-repeat: no-repeat;
+            background-size: 9px 13px;
+            background-position: center;
+            background-image: url('https://www.wiseapp.co.kr/resources/img/0912/ico_footer_mobile_nor.png');
+        }
+
+        &:hover .logo {
+            background-image: url('https://www.wiseapp.co.kr/resources/img/0912/ico_footer_mobile_pre.png');
+        }
+    }
+
+    #footer {
+        #footer_menu .line {
+            padding: 1.5px 12px 1.5px 12px;
+            cursor: default;
+            float: left;
+
+            div {
+                width: 1px;
+                height: 9px;
+                background-color: rgba(86, 104, 127, 0.5);
+            }
+        }
+
+        #co_info {
+            position: absolute;
+            left: 280px;
+            top: 27px;
+
+            div {
+                line-height: 19px;
+                text-align: left;
+                color: rgba(86, 104, 127, 0.5);
+            }
+        }
+    }
+}
+
+#goTop_view #top {
+    position: absolute;
+    bottom: -76px;
+    right: -41px;
+    width: 42px;
+    height: 42px;
+    background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_top_nor.png');
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_top_pre.png');
+    }
+}
+/***********  bottom   *************/
