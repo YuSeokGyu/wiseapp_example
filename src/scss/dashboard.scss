@@ -1,0 +1,1060 @@
+.post > .header {
+    &.two {
+        position: relative;
+        height: 60px;
+        float: left;
+        width: 485px;
+        overflow: visible;
+        margin-top: 30px;
+
+        + .header.two {
+            margin-left: 14px;
+        }
+
+        h2.title {
+            margin-top: 0px;
+            line-height: 40px;
+        }
+
+        .icon {
+        }
+    }
+
+    position: relative;
+    height: 60px;
+    overflow: visible;
+    margin-top: 30px;
+
+    h2.title {
+        margin-top: 0px;
+        line-height: 60px;
+    }
+
+    .icon {
+        float: left;
+        width: 20px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #google.icon {
+        background-image: url('https://www.wiseapp.co.kr/resources/img/common/img_google_big.png');
+    }
+
+    #apple.icon {
+        background-image: url('https://www.wiseapp.co.kr/resources/img/common/img_apple_big.png');
+    }
+}
+
+.sub_title_box {
+    .title {
+        margin-top: 42px;
+        float: left;
+        font-weight: 600;
+        font-size: 28px;
+        color: rgba(0, 0, 0, 0.8);
+        letter-spacing: -1px;
+    }
+
+    #baseDT {
+        margin-top: 54px;
+        float: left;
+        margin-left: 10px;
+        font-size: 16px;
+        zoom: 1;
+        color: rgba(0, 0, 0, 0.8);
+        letter-spacing: -1px;
+    }
+}
+
+/* select box */
+
+.select_box {
+    float: right;
+    width: 180px;
+
+    .selected_box {
+        border-radius: 6px;
+        background-color: #e0e5e9;
+        border: rgba(224, 229, 223, 0.8) 1px solid;
+
+        &:hover {
+            background-color: #ffffff;
+        }
+    }
+
+    .select_box_list {
+        width: 178px;
+        top: 39px;
+
+        .item {
+            #name {
+                margin-top: 14px;
+                margin-left: 20px;
+            }
+
+            &.selected #check {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    &.selected .select_box_list .item {
+        height: 40px;
+    }
+}
+
+#usage_rank_post .section,
+#market_rank_post .section {
+    margin-top: 5px;
+}
+
+#go_rank_post {
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+
+    .go_button {
+        float: left;
+        font-size: 14px;
+        text-align: center;
+        height: 54px;
+        width: 326px;
+        border: 1px solid #e1e3e5;
+        background-color: #ffffff;
+        position: relative;
+        z-index: 1899;
+        color: rgba(86, 104, 127, 0.8);
+        cursor: pointer;
+
+        &:hover {
+            color: #0099ff;
+            border: 1px solid #0099ff;
+            color: #0099ff;
+            border: 1px solid #0099ff;
+
+            + .go_button {
+                border-left: 1px solid #0099ff;
+            }
+        }
+
+        &:first-child {
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+
+        &:nth-child(3) {
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+
+        + .go_button {
+            margin-left: -1px;
+        }
+
+        .text {
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        .text2 {
+            margin-top: 5px;
+        }
+
+        .icon {
+            width: 24px;
+            height: 54px;
+            background-repeat: no-repeat;
+            background-size: 17px 14px;
+            background-image: url('https://www.wiseapp.co.kr/resources/img/0912/ico_go_nor.png');
+            background-position: center;
+            position: absolute;
+            right: 40px;
+            top: 0px;
+        }
+
+        &:hover .icon {
+            background-image: url('https://www.wiseapp.co.kr/resources/img/0912/ico_go_pre.png');
+        }
+    }
+}
+
+/***  issue 포스트 ****/
+
+#issue_post {
+    height: 616px;
+
+    .detailmove {
+        float: right;
+        margin-top: 19px;
+        margin-right: 25px;
+        color: #0099ff;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    #issue_box {
+        position: absolute;
+        height: 597px;
+    }
+
+    .section .header {
+        border-bottom: 1px solid #f3f3f4;
+    }
+
+    #user_section_box {
+        position: absolute;
+        right: 0px;
+        height: 233px;
+    }
+
+    #report_box {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        height: 350px;
+        overflow: hidden;
+    }
+}
+
+#issue_box .item.nodata {
+    margin-top: 180px;
+    cursor: default;
+    text-align: center;
+
+    .text {
+        font-size: 1.5em;
+        color: #a2b0bb;
+    }
+}
+
+/*****report list*****/
+
+.report_list {
+    display: inline-block;
+    width: 485px;
+
+    .item {
+        float: left;
+        position: relative;
+        width: 241px;
+        height: 149px;
+        background-color: #ffffff;
+        cursor: pointer;
+        border-right: 1px solid #f3f3f4;
+        border-bottom: 1px solid #f3f3f4;
+
+        &:nth-child(2) {
+            border-right: none;
+        }
+
+        &:nth-child(3) {
+            border-bottom: none;
+        }
+
+        &:nth-child(4) {
+            border-right: none;
+            border-bottom: none;
+        }
+
+        #title {
+            color: rgba(86, 104, 127, 1);
+            font-size: 24px;
+            font-weight: 600;
+            width: 200px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            position: absolute;
+            left: 20px;
+            top: 25px;
+            text-align: left;
+        }
+
+        .term_box {
+            color: rgba(86, 104, 127, 0.8);
+            font-size: 14px;
+            font-weight: 600;
+            position: absolute;
+            left: 20px;
+            top: 65px;
+
+            .line {
+                height: 12px;
+                width: 1px;
+                background-color: rgba(86, 104, 127, 0.5);
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-top: 2px;
+            }
+
+            div {
+                float: left;
+                letter-spacing: -1px;
+            }
+        }
+
+        #icon_list {
+            height: 20px;
+            position: absolute;
+            right: 17px;
+            bottom: 18px;
+
+            .icon {
+                width: 16px;
+                height: 16px;
+                float: left;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 16px 16px;
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/img_app_default.png');
+                margin-left: 5px;
+            }
+        }
+
+        &:hover {
+            #title,
+            .term_box {
+                color: #0099ff;
+            }
+        }
+
+        &.nodata {
+            margin-top: 100px;
+            cursor: default;
+            text-align: center;
+            border-right: none;
+            border-bottom: none;
+            width: 485px;
+
+            .text {
+                font-size: 1.5em;
+                color: #a2b0bb;
+            }
+        }
+    }
+}
+
+/*****report list*****/
+
+.user_section_list .item {
+    position: relative;
+    border-bottom: 1px solid #f3f3f4;
+    cursor: pointer;
+    height: 60px;
+    text-align: left;
+
+    &:last-child {
+        border-bottom: 0px;
+    }
+
+    #icon {
+        float: left;
+        margin-left: 20px;
+        width: 24px;
+        height: 60px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px 24px;
+        background-image: url('https://www.wiseapp.co.kr/resources/img/common/img_app_default.png');
+        margin-right: 10px;
+    }
+
+    #target_name {
+        float: left;
+        line-height: 60px;
+        color: #56687f;
+        font-size: 16px;
+        font-weight: 600;
+        width: 190px;
+
+        /* width: 250px; */
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    &:hover {
+        #target_name,
+        #update_text {
+            color: #0099ff;
+        }
+    }
+
+    #update_text {
+        float: left;
+        line-height: 60px;
+        color: #56687f;
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    &.nodata {
+        margin-top: 45px;
+        cursor: default;
+        text-align: center;
+
+        .text {
+            font-size: 1.5em;
+            color: #a2b0bb;
+        }
+    }
+}
+
+.issue_list {
+    /*margin-top: 20px;*/
+
+    .item {
+        position: relative;
+        border-bottom: 1px solid #f3f3f4;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 8px;
+
+        &:last-child {
+            border-bottom: 0px;
+        }
+
+        .title {
+            margin-left: 20px;
+            color: rgba(44, 53, 73, 1);
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .content {
+            width: 100%;
+            padding-left: 30px;
+            margin-top: 5px;
+            display: inline-block;
+            cursor: pointer;
+
+            &:hover {
+                .text,
+                .title {
+                    color: #0099ff;
+                }
+            }
+
+            .icon {
+                float: left;
+                width: 24px;
+                height: 40px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 24px 24px;
+                background-image: url('https://www.wiseapp.co.kr/resources/img/common/img_app_default.png');
+                margin-right: 10px;
+            }
+
+            .title {
+                float: left;
+                color: #56687f;
+                font-size: 16px;
+                font-weight: 600;
+                margin-left: 5px;
+                margin-top: 11px;
+                line-height: 18px;
+                width: 160px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            .text {
+                float: left;
+                color: #56687f;
+                font-size: 14px;
+                margin-left: 5px;
+                margin-top: 11px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+/***********  pie graph  *************/
+
+.chart_pie_wrapper {
+    margin-top: -12px;
+}
+
+.chart_pie {
+    width: 200px;
+    height: 350px;
+}
+
+.left .chart_pie {
+    margin-left: 53px;
+}
+
+.right .chart_pie {
+    margin-right: 53px;
+    margin-left: 0px;
+}
+
+.chart_pie_label {
+    position: absolute;
+    top: 68px;
+    width: 38px;
+    height: 32px;
+    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_main_gender.png');
+}
+
+.left .chart_pie_label {
+    left: 135px;
+}
+
+.right .chart_pie_label {
+    left: 83px;
+}
+
+#gender_selected_div.chart_pie_label {
+    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_main_gender.png');
+}
+
+#age_selected_div.chart_pie_label {
+    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_main_family.png');
+}
+
+.chart_pie_label.selected {
+    top: 59px;
+    width: 200px;
+    background-image: none !important;
+}
+
+.left .chart_pie_label.selected {
+    left: 53px;
+}
+
+.right .chart_pie_label.selected {
+    left: 1px;
+}
+
+.chart_pie_label.selected {
+    ul li {
+        text-align: center;
+    }
+
+    #title {
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+    #value {
+        margin-top: 11px;
+        color: #ffffff;
+        font-size: 1.66em;
+
+        span {
+            font-size: 12px;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+    }
+}
+
+.ui-corner-all {
+    border-radius: 0;
+}
+
+.ui-widget-content {
+    border: 0;
+    background: #ffffff;
+    color: #222222;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.ui-corner-left {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.ui-widget-header {
+    border: 0;
+    background: #40d6ee;
+    font-weight: 600;
+}
+
+.chart_pie_wrapper tspan {
+    font-family: 'Nanum Gothic', sans-serif;
+    fill: #acb2bd;
+}
+
+/***********  pie graph  *************/
+
+.items.many_col.dark {
+    background: #3b4c66;
+    color: #ffffff;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+.leftRow {
+    height: 460px;
+    overflow: hidden;
+}
+
+/***********  totalInfo  *************/
+
+#totalInfo {
+    height: 460px;
+}
+
+li .textInfo {
+    height: 148px;
+    text-align: center;
+    vertical-align: middle;
+
+    .wrapper {
+        .title {
+            margin-top: 48px;
+            height: 22px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        .value {
+            font-size: 1.33em;
+            color: #4b586b;
+            margin-top: 10px;
+
+            .num {
+                font-family: GothamLight;
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+#totalUsedTime li .textInfo .wrapper .value .num {
+    color: #ffffff;
+}
+
+li .textInfo .wrapper .value {
+    .unit {
+        font-size: 1.333em;
+    }
+
+    .img {
+        margin-right: 6px;
+    }
+
+    > div {
+        float: left;
+    }
+}
+
+/*
+  li .textInfo #totalAppInfo .wrapper .value .unit {
+      margin-left: -5px;
+  }
+  */
+
+#totalUsedTime .wrapper {
+    .value {
+        .img {
+            width: 28px;
+            height: 28px;
+            margin-right: 11px;
+            margin-top: 6px;
+            background: url('https://www.wiseapp.co.kr/resources/img/common/ico_main_daytime.png');
+        }
+
+        .num {
+            margin-right: 2px;
+        }
+
+        .unit {
+            margin-top: 14px;
+            margin-right: 9px;
+        }
+    }
+
+    .title {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .value {
+        color: #ffffff;
+    }
+}
+
+#totalAppInfo li.columns {
+    float: left;
+    width: 50%;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 1px;
+        background-color: #e7e8ea;
+        height: 80px;
+        position: absolute;
+        right: 0;
+        top: 34px;
+    }
+
+    &:last-child:after {
+        display: none;
+    }
+}
+
+#tatalInstall.columns .title {
+    .btn_info {
+        top: -3.6px;
+        text-indent: -9999em;
+    }
+
+    .info:hover {
+        background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_info_pre.png');
+    }
+}
+
+#totalInfo .leftRow > ul li.line:before {
+    content: '';
+    display: block;
+    width: 492px;
+    background-color: #e7e8ea;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+#totalAppInfo {
+    #tatalInstall .wrapper .value .img {
+        width: 18px;
+        height: 25px;
+        margin-top: 7px;
+        background: url('https://www.wiseapp.co.kr/resources/img/common/ico_main_install.png');
+    }
+
+    #tatalDayUse .wrapper .value .img {
+        width: 24px;
+        height: 24px;
+        margin-top: 8px;
+        background: url('https://www.wiseapp.co.kr/resources/img/common/ico_main_dayuse.png');
+    }
+
+    .wrapper .value {
+        .num {
+            margin-right: 2px;
+        }
+
+        .unit {
+            margin-top: 14px;
+            margin-right: 9px;
+        }
+    }
+}
+
+/***********  totalInfo  *************/
+
+.chart_serial {
+    width: 100%;
+    height: 300px;
+    z-index: 1799;
+    background-position: bottom;
+    background: url('https://www.wiseapp.co.kr/resources/img/common/img_main_category_bg.png');
+    margin-top: 12px;
+    border-bottom-right-radius: 8px;
+}
+
+.nodata .chart_serial,
+#nodata_div {
+    display: none;
+}
+
+.nodata #nodata_div {
+    display: block;
+
+    img {
+        border: 0;
+        margin-top: 100px;
+    }
+
+    .text {
+        font-size: 1.5em;
+        color: #a2b0bb;
+    }
+}
+
+.chart_serial_tilte {
+    position: absolute;
+    top: 58px;
+    left: 186px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.nodata .chart_serial_tilte {
+    display: none;
+}
+
+#content_view {
+    padding-bottom: 0px;
+}
+
+.post .body {
+    overflow: visible;
+}
+
+.page_section.bottom {
+    margin: 0px;
+    height: 132px;
+    zoom: 1;
+
+    #share {
+        top: 40px;
+    }
+}
+
+.chart_pie_wrapper .amcharts-legend-div text,
+.chart_serial .amcharts-chart-div tspan {
+    font-family: 'Nanum Gothic';
+}
+
+#total_container {
+    &.ja_JP {
+        .chart_pie_wrapper .amcharts-legend-div text,
+        .chart_serial .amcharts-chart-div tspan {
+            font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3',
+                HiraKakuProN-W3, 'Hiragino Kaku Gothic Pro', NanumGothic,
+                'Malgun Gothic', sans-serif;
+        }
+    }
+
+    &.zh_CN {
+        .chart_pie_wrapper .amcharts-legend-div text,
+        .chart_serial .amcharts-chart-div tspan {
+            font-family: tahoma, 'PingFang SC', 'microsoft yahei', arial,
+                'helvetica neue', 'hiragino sans gb', sans-serif;
+        }
+    }
+
+    &.ja_JP.safari {
+        .chart_pie_wrapper .amcharts-legend-div text,
+        .chart_serial .amcharts-chart-div tspan {
+            font-family: 'Tahoma', 'MS PGothic';
+        }
+    }
+
+    &.zh_CN.safari {
+        .chart_pie_wrapper .amcharts-legend-div text,
+        .chart_serial .amcharts-chart-div tspan {
+            font-family: 'Tahoma', 'MS PGothic';
+        }
+    }
+}
+
+.amcharts-legend-div path {
+    display: none;
+}
+
+#keywordRank .div_tbl .items .item {
+    cursor: default;
+}
+
+#usage_view_title {
+    .header {
+        margin-top: 0px;
+    }
+
+    &.sub_title_box {
+        .title {
+            margin-top: 22px;
+        }
+
+        #baseDT {
+            margin-top: 30px;
+            font-size: 20px;
+            letter-spacing: -2px;
+        }
+    }
+}
+
+#usage_rank_title.sub_title_box #baseDT,
+#market_rank_title.sub_title_box #baseDT {
+    margin-top: 50px;
+    font-size: 20px;
+    letter-spacing: -2px;
+}
+
+.select_box .selected_box {
+    height: 38px;
+
+    #name {
+        margin-top: 12px;
+    }
+
+    #selecter {
+        margin-top: 12px;
+        margin-right: 20px;
+    }
+}
+
+#market_rank_header.header h2.title {
+    margin-top: 0px;
+    line-height: 40px;
+}
+
+#usage_rank_post.post > .header,
+#market_rank_header.header {
+    height: 45px;
+}
+
+#notice_view .post > .header {
+    h2.title {
+        margin-top: 50px;
+        line-height: 0px;
+    }
+
+    .detailmove {
+        margin-top: 46px;
+    }
+}
+
+#issue_post .section .header h2.subtitle {
+    margin-left: 20px;
+    margin-top: 19px;
+}
+
+#marketRank .section {
+    margin-top: 5px;
+}
+
+.div_tbl .items .item {
+    .columns .val .blind {
+        background-color: #ebeff3;
+        width: 30px;
+        min-height: 12px;
+        float: right;
+        margin-top: 18px;
+    }
+
+    &.hover .columns .val .blind {
+        margin-top: 39px;
+    }
+}
+
+#customer_list_view {
+    width: 100%;
+    margin: 0 auto;
+    background: #0099ff;
+    position: relative;
+    padding-bottom: 70px;
+
+    #desc {
+        color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 64px;
+        margin-bottom: 30px;
+    }
+
+    #customer_list {
+        width: 890px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding-top: 20px;
+        padding-bottom: 52px;
+
+        .block {
+            margin-top: 32px;
+            height: 40px;
+            text-align: center;
+
+            .wrapper {
+                margin: 0 auto;
+                display: inline-block;
+            }
+        }
+
+        .item {
+            height: 40px;
+            float: left;
+
+            + .item {
+                margin-left: 16px;
+            }
+        }
+    }
+}
+
+#banner_wrapper #btn_company_info {
+    width: 180px;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #0099ff;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 40px;
+
+    &:hover {
+        background-color: #0089e6;
+    }
+}
+
+#revenue_rank_post {
+    .section {
+        margin-top: 5px;
+    }
+
+    &.post > .header {
+        height: 45px;
+    }
+}
+
+#revenue_rank_title.sub_title_box #baseDT {
+    margin-top: 50px;
+    font-size: 20px;
+    letter-spacing: -2px;
+}
+
+#appRevenueRank .div_tbl .items .item.hover .columns .val {
+    font-size: 11px;
+}
+
+.div_tbl .items .item {
+    .columns .pct .blind {
+        background-color: #ebeff3;
+        width: 30px;
+        min-height: 12px;
+        float: right;
+        margin-top: 18px;
+    }
+
+    &.hover .columns .pct .blind {
+        margin-top: 39px;
+    }
+
+    .columns .pct2 .blind {
+        background-color: #ebeff3;
+        width: 30px;
+        min-height: 12px;
+        float: right;
+        margin-top: 18px;
+    }
+
+    &.hover .columns .pct2 .blind {
+        margin-top: 39px;
+    }
+}
