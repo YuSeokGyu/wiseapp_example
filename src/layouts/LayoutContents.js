@@ -6,8 +6,16 @@ import Routes from '../routes';
 
 class LayoutContents extends Component {
     render() {
+        const { location } = this.props;
+        const pathName = location.pathname;
+        const home = pathName === '/';
+
         return (
-            <div className="app" id="total_container">
+            <div
+                className="app"
+                id="total_container"
+                className={home ? 'home' : undefined}
+            >
                 <LayoutHeader breadcrumb={Routes} />
                 <Switch>
                     {Routes.map((route, idx) => {

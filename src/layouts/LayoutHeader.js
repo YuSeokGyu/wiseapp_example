@@ -121,8 +121,8 @@ class LayoutHeader extends Component {
                                     <div id="menu">
                                         <ul>
                                             <li>
-                                                <a
-                                                    href="/"
+                                                <Link
+                                                    to="/"
                                                     onMouseEnter={
                                                         appStore === true
                                                             ? this
@@ -136,11 +136,11 @@ class LayoutHeader extends Component {
                                                     >
                                                         홈
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="/dashboard/"
+                                                <Link
+                                                    to="/dashboard"
                                                     onMouseEnter={
                                                         this.onMouseAppOver
                                                     }
@@ -151,7 +151,7 @@ class LayoutHeader extends Component {
                                                     >
                                                         앱시장분석
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
                                                 <a

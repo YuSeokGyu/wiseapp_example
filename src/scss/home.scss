@@ -1,5 +1,7 @@
 #total_container {
-    background: #d8e4ee;
+    &.home {
+        background: #d8e4ee;
+    }
 }
 
 #info_pay_view #info_pay_box {
