@@ -1,0 +1,1154 @@
+/***********  orderby   *************/
+.page_orderby{
+    clear: both;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    zoom: 1;
+    display: inline-block;
+    width: 984px;
+}
+
+.page_orderby * {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.page_orderby .select_box{
+    position: relative;
+    margin-top: 40px;
+}
+
+.page_orderby #search_type_slt_box{
+    float: left;
+    width: 125px;
+}
+
+#total_container.en_US .page_orderby #search_type_slt_box{
+    width: 166px;
+}
+
+#total_container.ja_JP .page_orderby #search_type_slt_box{
+    width: 146px;
+}
+
+#total_container.ja_JP .page_orderby #search_type_slt_box #search_type #name {
+    letter-spacing: -1px;
+}
+
+#total_container.en_US .page_orderby #search_type_slt_box .select_box_list .item {
+    width: 162px;
+}
+
+#total_container.ja_JP .page_orderby #search_type_slt_box .select_box_list .item {
+    width: 142px;
+}
+
+.page_orderby #orderby_slt_box{
+    float: right;
+    width: 280px;
+}
+
+
+.page_orderby #orderbyType {
+    border-radius: 6px;
+    width: 280px;
+}
+
+.page_orderby #orderbyType_list {
+    width: 280px;
+}
+
+.page_orderby #orderbyType_list.daily .item.nonDaily {
+    display: none;
+}
+
+.page_orderby #search_type_slt_box .selected_box{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    z-index: 100;
+    position:relative;
+}
+.page_orderby #search_type_slt_box .selected_box:hover,
+.page_orderby #search_type_slt_box.selected .selected_box{
+    z-index: 105;
+}
+
+
+
+.page_orderby #search_type_slt_box  .selected_box #selecter{
+    margin-right: 15px;
+}
+
+.page_orderby #search_type_slt_box .select_box_list .item{
+    width: 121px;
+}
+
+.page_orderby #search_type_slt_box .select_box_list .item.disable #name{
+    color: #cdd2d8;
+}
+
+
+.page_orderby #orderbyType_slt_box .select_box_list .item{
+    width: 280px;
+}
+
+
+.page_orderby #search_type_slt_box .select_box_list .item #name {
+    margin-left: 20px;
+}
+
+
+
+/* 검색어 검색 추후 별도 div로 이동*/
+.page_orderby #keywordSearch {
+    float: left;
+    /*width: 464px;*/
+    margin-top: 40px;
+    position: relative;
+}
+
+.page_orderby #keywordSearch #search_keyword {
+    float: left;
+    margin-left: -2px;
+    box-sizing: border-box;
+    padding-left: 22px;
+    padding-right: 42px;
+    padding-top: 0px;
+    width: 230px;
+    height: 58px;
+    font-size: 1.166em;
+    background-color: #FFFFFF;
+    outline: none;
+    color: #0099ff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: #bbc5cd 2px solid;
+    z-index: 100;
+    position:relative;
+}
+
+#total_container.en_US .page_orderby #keywordSearch #search_keyword{
+    width: 232px;
+}
+
+.page_orderby #keywordSearch #search_keyword::-webkit-input-placeholder {
+    font-family: 'Nanum Gothic', sans-serif;
+    color:  rgba(0,0,0,0.6);
+}
+.page_orderby #keywordSearch #search_keyword::-moz-placeholder {
+    font-family: 'Nanum Gothic', sans-serif;
+    color:  rgba(0,0,0,0.6);
+}
+.page_orderby #keywordSearch #search_keyword::-moz-placeholder {
+    font-family: 'Nanum Gothic', sans-serif;
+    color:  rgba(0,0,0,0.6);
+}
+.page_orderby #keywordSearch #search_keyword::-ms-input-placeholder {
+    font-family: 'Nanum Gothic', sans-serif;
+    color:  rgba(0,0,0,0.6);
+}
+
+
+
+.page_orderby #keywordSearch #search_keyword:focus,
+.page_orderby #keywordSearch #search_keyword.focus,
+.page_orderby #keywordSearch #search_keyword:hover{
+    border: #0099ff solid 2px;
+    z-index: 101;
+}
+
+.page_orderby #keywordSearch input {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+
+
+.page_orderby #keywordSearch input[type="text"]:invalid + input[type="reset"]{
+    display: none;
+}
+
+.page_orderby #keywordSearch input[type="reset"] {
+    background-image:url('https://www.wiseapp.co.kr/resources/img/common/btn_search_del_nor.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 138px;
+    z-index: 102;
+}
+
+.page_orderby #keywordSearch input[type="reset"]:hover {
+    background-image:url('https://www.wiseapp.co.kr/resources/img/common/btn_search_del_pre.png');
+}
+
+.page_orderby #keywordSearch #btn_search {
+    float: left;
+    margin-left: 10px;
+    color: #56687f;
+    background-color: #FFFFFF;
+    border: #788699 2px solid;
+    width: 112px;
+    height: 58px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.page_orderby #keywordSearch #btn_search:hover {
+    color: #0099ff;
+    border: #0099ff 2px solid;
+}
+
+.page_orderby #keywordSearch #btn_search:focus {
+    outline: none;
+}
+
+.page_orderby #keywordSearch #btn_search.focus {
+    color: #FFFFFF;
+    background-color: #0099FF;
+    border: none;
+}
+
+.page_orderby #keywordSearch #btn_search.focus:hover {
+    color: #FFFFFF;
+    background-color: #0099FF;
+    border: none;
+}
+
+
+/*excel button*/
+.page_orderby #btn_export_excel{
+    margin-left: 10px;
+    margin-top: 40px;
+    float:right;
+    width: 54px;
+    height: 62px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 62px 54px;
+    text-align: center;
+    background-image: url('https://www.wiseapp.co.kr/resources/img/1214/btn_excel_nor.png');
+    cursor: pointer
+}
+
+.page_orderby #btn_export_excel:hover{
+    background-image: url('/resources/img/1214/btn_excel_pre.png');
+}
+
+
+.page_orderby  #div_check_box{
+    margin-right: 15px;
+    margin-top: 40px;
+    display: inline-block;
+    float:right;
+    position:relative;
+    line-height: 54px;
+}
+
+.page_orderby  #div_check_box #chk_new_list{
+    height: 54px;
+}
+
+.page_orderby  #div_check_box .chk_text{
+    line-height: 24px;
+    font-size: 14px;
+    line-height: 54px;
+    font-weight: 600;
+    color: #56687f;
+    float: left;
+}
+
+/***********  orderby   *************/
+
+.rank_tbl.header{
+    background-color: #ffffff;
+    height:73px;
+
+    text-align:center;
+    border-top: 2px solid #939ba6;
+    border-bottom: 1px solid #c9cdd2
+}
+
+.rank_tbl.header .title{
+    display:table;
+}
+
+
+.rank_tbl.header .item{
+    display:table-cell;
+    vertical-align:middle;
+    font-weight: 600;
+    font-size: 11px;
+    /*letter-spacing:-25px;*/
+    color: #565671;
+    height:73px;
+    text-align:center;
+    position: relative;
+}
+
+.rank_tbl.header .item.disable{
+    color: #cdd2d8;
+}
+
+
+.rank_tbl.header .item.selected{
+    color: #0099ff;
+}
+
+.rank_tbl.header .item.line:after {
+    content: "";
+    display: block;
+    width: 1px;
+    background-color: #eff0f1;
+    height: 73px;
+    position: absolute;
+    right: 0;
+    clear: both;
+    top: 0px;
+}
+
+
+.rank_tbl.header .item .btn_info{
+    float:left;
+    margin-left:3px;
+    width:16px;
+    height:20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('https://www.wiseapp.co.kr/resources/img/common/btn_info_nor.png');
+}
+
+
+.rank_tbl.header .item .text{
+    line-height:16px;
+    letter-spacing: -1px;
+}
+
+.rank_tbl.header .item .text.inline{
+    float:left;
+    margin-top: 2px;
+}
+
+.rank_tbl.header .item .wrapper.rank{
+    float:left;
+}
+
+.rank_tbl.header .item:nth-child(1) .text{
+    margin-left: 15px;
+    text-align: left;
+}
+
+.rank_tbl.header .item:nth-child(1) .text.rank {
+    margin-left: 0px;
+}
+
+.rank_tbl.header .item:nth-child(1) .text.num {
+    margin-left: 3px;
+    margin-top: 10px;
+}
+
+
+.rank_tbl.body .items > .item{
+    height:67px;
+    position:relative;
+    cursor: pointer;
+}
+
+.rank_tbl.body .items > .item.nodata {
+    cursor: default;
+    height:200px;
+    margin-top: 100px;
+}
+
+.rank_tbl.body .items > .item.nodata .text {
+    font-size: 1.5em;
+    color: #a2b0bb;
+}
+
+.rank_tbl.body .items > .item.nodata:hover {
+    background-color:#ffffff;
+}
+
+.rank_tbl.body .items > .item:hover,
+.rank_tbl.body .items > .item:hover .columns{
+    background-color:#f8faff;
+}
+
+.rank_tbl.body .items .item:hover .columns > a .name {
+    color: #0099ff;
+}
+
+
+.rank_tbl.body .items .item .columns{
+    background-color: #ffffff;
+    display:inline-block;
+    width:100%;
+    left:0px;
+    z-index: 1798;
+}
+
+.rank_tbl.body .items .item .columns.line2{
+    position:absolute;
+    bottom:15px;
+}
+
+.rank_tbl.body .items .item .columns li{
+    float:left;
+    position: relative;
+    min-height: 12px;
+}
+
+
+.rank_tbl.body .items .item .columns li .rightline {
+    margin-right: 8px;
+}
+
+.rank_tbl.body .items .item .columns li .totalUsedTime {
+    margin-right: 6px;
+}
+
+.rank_tbl.body .items .item .columns li .blind {
+    background-color: #ebeff3;
+    width: 30px;
+    min-height: 12px;
+    float:right;
+}
+
+
+.rank_tbl.body .items .item .columns li.line:after {
+    content: "";
+    display: block;
+    width: 1px;
+    background-color: #eff0f1;
+    height: 67px;
+    position: absolute;
+    right: -5px;
+    top: -40px;
+    clear: both;
+}
+
+.rank_tbl.body .items .item .columns li.item_val_2 div:nth-child(2){
+    margin-left:10px;
+}
+
+.rank_tbl.body .items .item .columns.line1 li{
+    margin-top:15px;
+    height:20px;
+    line-height:20px;
+}
+
+
+.rank_tbl.body .items .item .columns > li.rank{
+    font-size:14px;
+    color:  #56687f;
+    width:50px;
+}
+
+.rank_tbl.body .item .wrapper.rank{
+    float:left;
+}
+
+.rank_tbl.body .items .item .columns .rank .text {
+    font-size: 14px;
+    color: #56687f;
+}
+
+/*
+.rank_tbl.body .items .item .columns .rank.index {
+	width:46px;
+}
+*/
+
+.rank_tbl.body .items .item .columns .rank .index {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1799;
+    width: 50px;
+}
+
+.rank_tbl.body .items .item .columns .rank.index > div {
+    width:30px;
+    text-align: center;
+    margin-right: 3px;
+}
+
+.rank_tbl.body .items .item .columns .num {
+    overflow: visible;
+    margin-left: 3px;
+    margin-top: 10px;
+}
+
+.rank_tbl.body .items .item .columns .num .idx {
+    font-size:14px;
+    color:  #56687f;
+    width:36px;
+    text-align: left;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    z-index: 1799;
+}
+
+.rank_tbl.body .items .item .columns > .icon{
+    width: 20px;
+    height:20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-image: url('https://www.wiseapp.co.kr/resources/img/common/img_app_default.png');
+}
+
+.rank_tbl.body .items .item .columns  > .name{
+    margin-left:12px;
+    font-size:14px;
+    color: #56687f;
+    font-weight:600;
+}
+
+
+.rank_tbl.body .items .item .columns > a > .name{
+    margin-left:12px;
+    font-size:14px;
+    color: #56687f;
+    font-weight:600;
+
+    max-width: 260px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.rank_tbl.body .items .item .columns  > .corp{
+    margin-left:8px;
+    font-size:11px;
+    line-height: 18px !important;
+    height: 16px !important;
+    color: rgba(86,104,127,0.6);
+    border: solid 1px rgba(180,190,198,0.5);
+    border-radius: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 16px !important;
+    max-width:90px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.rank_tbl.body .items .item .columns  > .corp:hover{
+    color: rgba(86,104,127,0.8);
+    border: solid 1px rgba(180,190,198,0.8);
+}
+
+
+.rank_tbl.body .items .item .columns .btn_myapp{
+    width: 20px;
+    height:20px;
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-image: url('https://www.wiseapp.co.kr/resources/img/0516/btn_star_list_nor.png');
+    background-position: center;
+    margin-left: 5px;
+    display:none;
+}
+
+.rank_tbl.body .items .item:hover .columns > .btn_myapp {
+    display:inline-block;
+    background-image: url('https://www.wiseapp.co.kr/resources/img/0516/btn_star_list_nor.png');
+}
+
+.rank_tbl.body .items .item .columns > .btn_myapp:hover {
+    display:inline-block;
+    background-image: url('https://www.wiseapp.co.kr/resources/img/0706/btn_star_list_pre.png');
+}
+
+.rank_tbl.body .items .item .columns > .btn_myapp.hover {
+    display:inline-block;
+    background-image: url('https://www.wiseapp.co.kr/resources/img/0706/btn_star_list_pre.png');
+}
+
+
+.rank_tbl.body .items .item .columns > .btn_myapp.selected {
+    display:inline-block;
+    background-image: url('https://www.wiseapp.co.kr/resources/img/0516/btn_star_list_foc.png');
+}
+
+
+
+.rank_tbl.body .items .item .columns > .cate_change{
+    margin-left:12px;
+    margin-top:17px !important;
+    font-size:10px;
+    /*
+    color: #0099ff;
+    color: #F96398;
+    */
+    color: #F9677E;
+    font-weight:600;
+    z-index: 1799;
+}
+
+
+.rank_tbl.body .items .item .columns.line2 li:nth-child(1){
+    /*
+    width:50px;
+    */
+    width:82px;
+}
+
+.rank_tbl.body .items .item .columns.line2 li:nth-child(2){
+    width:134px;
+    text-align: left;
+    /*
+    margin-left:31px;
+    */
+    margin-left:0px;
+}
+
+.rank_tbl.body .items .item .columns.line2 li:nth-child(3){
+    width:124px;
+    text-align: left;
+}
+
+
+.rank_tbl.body .items .item .columns.line2 li:nth-child(4){
+    text-align: right;
+    width:45px;
+}
+
+.rank_tbl.body .items .item .columns.line2 li:nth-child(5){
+    text-align: right;
+    width:94px;
+}
+
+.rank_tbl.body .items .item .columns.line2 li:nth-child(6){
+    text-align: right;
+    width:60px;
+}
+
+.rank_tbl.body .items .item .columns.line2 li:nth-child(7){
+    text-align: right;
+    width:60px;
+}
+
+.rank_tbl.body .items .item .columns.line2 li:nth-child(8){
+    text-align: right;
+    width:90px;
+}
+
+.rank_tbl.body .items .item .columns.line2 li:nth-child(9){
+    text-align: right;
+    width:60px;
+}
+
+.rank_tbl.body .items .item .columns.line2 li:nth-child(10){
+    text-align: right;
+    width:76px;
+}
+
+.rank_tbl.body .items .item .columns.line2 li:nth-child(11){
+    text-align: right;
+    width:65px;
+}
+
+.rank_tbl.body .items .item .columns.line2 li:nth-child(12){
+    text-align: right;
+    width: 89px;
+    margin-left: 5px;
+}
+
+
+.rank_tbl.body .items .item .columns .diff{
+    text-align:center;
+    overflow: hidden;
+}
+
+.rank_tbl.body .items .item .columns .diff div.wrapper{
+    vertical-align: text-bottom;
+}
+
+.rank_tbl.body .items .item .columns .diff .icon{
+    float:left;
+    width:7px;
+    height:7px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.rank_tbl.body .items .item .columns .diff.up .icon{
+    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_ranking_up.png');
+    margin-top:6px;
+}
+
+.rank_tbl.body .items .item .columns .diff.down .icon{
+    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_ranking_down.png');
+    margin-top:7px;
+}
+
+.rank_tbl.body .items .item .columns .diff.new .icon{
+    width:26px;
+    height:9px;
+    background-size: 26px 9px;
+    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ic_new_rank.png');
+    margin-top: 6px;
+}
+
+.rank_tbl.body .items .item .columns .diff .val{
+    float:left;
+    font-size: 11px;
+    color: #56687f;
+    font-weight: 600;
+    /*
+    margin-left:5px;
+    */
+    margin-top: 1px;
+}
+
+.rank_tbl.body .items .item .columns .diff.up .val{
+    margin-left:5px;
+    color:#ff788e;
+}
+
+.rank_tbl.body .items .item .columns .diff.down .val{
+    margin-left:5px;
+    color:#00bf99;
+}
+
+/*
+.rank_tbl.body .items .item .columns .text{
+	font-size:14px;
+	color: #56687f;
+	font-weight: 600;
+	width:260px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+*/
+
+.rank_tbl.body .items .item.selected .columns .text{
+    color: #0099ff;
+}
+
+
+.rank_tbl.body .items .item .columns > .val{
+    font-size:12px;
+    color: #56687f;
+}
+
+
+.rank_tbl.body .items .item .columns .pct{
+    font-size:12px;
+    font-weight: 600;
+    text-align:center;
+    width:120px;
+}
+
+.rank_tbl.body .items .item .columns > .val.up{
+    color:#ff788e;
+}
+.rank_tbl.body .items .item .columns > .val.down{
+    color:#00bf99;
+}
+
+
+.rank_tbl.body .items > .item:last-child {
+    border-bottom: 1px solid #c9cdd2;
+}
+
+
+
+
+.rank_tbl.body .items .item .iwranktooltip {
+    position: absolute;
+    top: 53px;
+    left: 15px;
+    z-index: 1799;
+    min-width: 10px;
+    min-height: 5px;
+    display: none;
+}
+
+.rank_tbl.body .items .item .iwranktooltip .bg {
+    background: rgba(255, 255, 255, 0.9);
+    /*opacity: 0.8;*/
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    /*border: 1px solid rgba(150,150,150,0.5);*/
+    box-shadow: 0px 1px 2px 1px rgba(150,150,150,0.5);
+}
+
+.rank_tbl.body .items .item .iwranktooltip .content {
+    margin: 3px 8px 1px 8px;
+    font-size: 12px;
+    color: #56687f;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.rank_tbl.body .items .item .iwranktooltip .content > div.wrapper {
+    display: block;
+    overflow: hidden;
+}
+
+.rank_tbl.body .items .item .iwranktooltip .content .text {
+    float: left;
+}
+
+.rank_tbl.body .items .item .iwranktooltip .content .line {
+    float: left;
+    width: 1px;
+    height: 11px;
+    background-color: rgba(144, 147, 147, 0.5);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4.5px;
+}
+
+.rank_tbl.body .items .item .iwranktooltip .content .diff {
+    text-align: center;
+    overflow: hidden;
+    margin-left: 8px;
+}
+
+.rank_tbl.body .items .item .iwranktooltip .content .diff div.wrapper {
+    vertical-align: text-bottom;
+}
+
+.rank_tbl.body .items .item .iwranktooltip .content .diff div.wrapper > div {
+    float: left;
+}
+
+.rank_tbl.body .items .item .iwranktooltip .content .diff .icon {
+    float: left;
+    width: 7px;
+    height: 7px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.rank_tbl.body .items .item .iwranktooltip .content .diff.up .icon {
+    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_ranking_up.png');
+    margin-top: 6px;
+}
+
+.rank_tbl.body .items .item .iwranktooltip .content .diff.down .icon {
+    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ico_ranking_down.png');
+    margin-top: 7px;
+}
+
+.rank_tbl.body .items .item .iwranktooltip .content .diff.new .icon {
+    width: 26px;
+    height: 9px;
+    background-size: 26px 9px;
+    background-image: url('https://www.wiseapp.co.kr/resources/img/common/ic_new_rank.png');
+    margin-bottom: 3px;
+}
+
+.rank_tbl.body .items .item .iwranktooltip .content .diff .val {
+    float: left;
+    font-size: 11px;
+    color: #56687f;
+    font-weight: 600;
+    margin-top: 1px;
+}
+
+.rank_tbl.body .items .item .iwranktooltip .content .diff.up .val {
+    margin-left: 5px;
+    color: #ff788e;
+}
+
+.rank_tbl.body .items .item .iwranktooltip .content .diff.down .val {
+    margin-left: 5px;
+    color: #00bf99;
+}
+
+.rank_tbl.body .items > .item:hover .iwranktooltip {
+    display: block;
+    transition-duration: 0.3s;
+}
+
+#btn_diff_box{
+    margin-top: 20px;
+}
+
+#btn_diff_box.hidden {
+    display: none;
+}
+
+#btn_diff_box #btn_diff_myapp{
+    width: 250px;
+}
+
+
+.rank_tbl.body .items .item .columns .stat_error_icon{
+    width:24px;
+    height:24px;
+    background-size: 24px 24px;
+    background-image: url('https://www.wiseapp.co.kr/resources/img/0404/ic_list_error.png');
+    margin-top: 6px;
+}
+
+
+
+
+.page_orderby #keywordSearch #div_search_result {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    border-radius: 9px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
+    width: 225px;
+    min-height: 86px;
+    max-height: 354px;
+    box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: none;
+    z-index: 1901;
+    zoom: 1;
+}
+
+.page_orderby #keywordSearch #div_search_result .list {
+    position: relative;
+    min-height: 44px;
+    max-height: 352px;
+    overflow: hidden;
+}
+
+.page_orderby #keywordSearch .ui-widget {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+.page_orderby #keywordSearch .ui-autocomplete {
+    color: #2b3d52;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 210px;
+    max-height: 352px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 0px;
+    position: relative;
+}
+
+.page_orderby #keywordSearch .ui-autocomplete::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.page_orderby #keywordSearch .ui-autocomplete::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+.page_orderby #keywordSearch .ui-autocomplete::-webkit-scrollbar-button:start:decrement,
+.page_orderby #keywordSearch .ui-autocomplete::-webkit-scrollbar-button:end:increment {
+    display: block; height: 5px;
+    border:0
+}
+
+.page_orderby #keywordSearch .ui-autocomplete::-webkit-scrollbar-track {
+
+}
+.page_orderby #keywordSearch .ui-autocomplete::-webkit-scrollbar-thumb {
+    background-color: rgba(59, 76, 102, 0.5);
+    -webkit-border-radius: 2.5px;
+    border-radius: 2.5px;
+
+}
+
+/* IE 6 doesn't support max-height
+   * we use height instead, but this forces the menu to always be this tall
+   */
+* html .page_orderby #keywordSearch .ui-autocomplete {
+    height: 100px;
+}
+
+.page_orderby #keywordSearch .ui-menu .ui-menu-item {
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+    width: 100%;
+    list-style-image: none;
+    min-height: 44px;
+}
+
+.page_orderby #keywordSearch .ui-menu .ui-menu-item .ui-corner-all {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.page_orderby #keywordSearch .ui-menu .ui-menu-item a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    line-height: 1.5;
+    zoom: 1;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.page_orderby #keywordSearch .ui-widget{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.page_orderby #keywordSearch .ui-state-focus,
+.page_orderby #keywordSearch .ui-widget-content .ui-state-focus,
+.page_orderby #keywordSearch .ui-widget-header .ui-state-focus {
+    border: 0px;
+    background: rgba(0, 153, 255, 0.1);
+    font-weight: 100;
+    color: #212121;
+}
+
+.page_orderby #keywordSearch .autocomplete-link {
+    position: relative;
+    display: block;
+    padding: 11px 15px 12px 14px;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.page_orderby #keywordSearch .autocomplete-details {
+    float:left;
+    width: 149px;
+    height: 20px;
+    margin-right: 8px;
+    padding-top: 1px;
+}
+
+.page_orderby #keywordSearch .autocomplete-check {
+    float: left;
+    height: 19px;
+    width: 19px;
+    background-size: 100%;
+}
+
+.page_orderby #keywordSearch .autocomplete-check.group {
+    background-image: url(https://www.wiseapp.co.kr/resources/img/170622/ico_group.png);
+}
+
+.page_orderby #keywordSearch .autocomplete-check.company {
+    background-image: url(https://www.wiseapp.co.kr/resources/img/170622/ico_company.png);
+}
+
+.page_orderby #keywordSearch .autocomplete-name {
+    overflow: hidden;
+    text-align: left;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.page_orderby #keywordSearch .autocomplete-name span {
+    color: #0099ff;
+    font-weight: 600;
+}
+
+
+.page_orderby #keywordSearch #div_selected_provider {
+    position: absolute;
+    z-index: 101;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: #0099ff 2px solid;
+    margin-left: -2px;
+    box-sizing: border-box;
+    padding-left: 22px;
+    padding-right: 42px;
+    padding-top: 0px;
+    width: 230px;
+    height: 58px;
+    font-size: 1.166em;
+    background-color: #FFFFFF;
+}
+
+.page_orderby #keywordSearch #div_selected_provider .name {
+    line-height: 55px;
+    max-width: 127px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #637b8d;
+    font-size: 16px;
+    font-weight: 600;
+    float: left;
+}
+
+.page_orderby #keywordSearch #div_selected_provider .icon {
+    margin-left: 5px;
+    margin-top: 18px;
+    width: 19px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-size: 19px 19px;
+    background-position: center;
+    float: left;
+}
+
+.page_orderby #keywordSearch #div_selected_provider .icon.group {
+    background-image: url(https://www.wiseapp.co.kr/resources/img/170622/ico_group.png);
+}
+
+.page_orderby #keywordSearch #div_selected_provider .icon.company {
+    background-image: url(https://www.wiseapp.co.kr/resources/img/170622/ico_company.png);
+}
+
+.page_orderby #keywordSearch #div_selected_provider .reset {
+    background-image: url(https://www.wiseapp.co.kr/resources/img/common/btn_search_del_nor.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    z-index: 102;
+}
+
+.page_orderby #keywordSearch #div_selected_provider .reset:hover {
+    background-image:url('https://www.wiseapp.co.kr/resources/img/common/btn_search_del_pre.png');
+}
+
+
+.rank_tbl.body .items .item .columns .rank #type.blind {
+    background-color: #ebeff3;
+    width: 24px;
+    height: 15px;
+    margin-left: 3px;
+    float: none;
+}
+
+.rank_tbl.body .items .item .columns .diff.blind {
+    background-color: #ebeff3;
+    width: 18px;
+    height: 10px;
+    margin-top: 5px;
+    float: none;
+    margin-left: 6px;
+}

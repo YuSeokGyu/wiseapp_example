@@ -281,14 +281,14 @@ class LayoutHeader extends Component {
                                                     <li className="title">
                                                         실사용분석
                                                     </li>
-                                                    <a href="/app/rank/">
+                                                    <Link to="/app/rank">
                                                         <li
                                                             id="app"
                                                             className="list"
                                                         >
                                                             앱
                                                         </li>
-                                                    </a>
+                                                    </Link>
                                                     <a href="/category/rank/">
                                                         <li
                                                             id="category"

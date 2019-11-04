@@ -1,0 +1,183 @@
+$color_1: rgba(86, 104, 127, 0.8);
+$color_2: #00bf99;
+$color_3: #ff788e;
+$background_color_1: #FFFFFF;
+$background_color_2: rgba(48, 48, 49, 0.1);
+
+/* 급변동 필터  */
+#pct_filter_box {
+    font-size: 14px;
+    text-align: center;
+    height: 54px;
+    border-top: 1px solid #e1e3e5;
+    border-bottom: 1px solid #e1e3e5;
+    border-left: 1px solid #e1e3e5;
+    background-color: $background_color_1;
+    position: relative;
+    margin-top: -30px;
+    #slider_value {
+        top: 14px;
+        width: 104px;
+        font-weight: 600;
+        color: $color_1;
+        right: 5px;
+        position: absolute;
+        letter-spacing: -1px;
+        font-size: 14px;
+        >div {
+            float: left;
+            margin-left: 3px;
+        }
+        .all {
+            font-size: 24px;
+        }
+        .unit {
+            margin-top: 5px;
+        }
+        .value {
+            margin-top: 5px;
+        }
+    }
+    .val {
+        font-size: 12px;
+        bottom: 10px;
+        font-weight: 600;
+        color: $color_1;
+        position: absolute;
+    }
+    .val.down {
+        color: $color_2;
+    }
+    .val.up {
+        color: $color_3;
+    }
+    .line {
+        background-color: $background_color_2;
+        width: 1px;
+        height: 25px;
+        position: absolute;
+        top: 15px;
+        left: 290px;
+    }
+    #up_down_filter {
+        margin-left: 40px;
+        .tab_item {
+            width: 39px;
+            height: 60px;
+            background-repeat: no-repeat;
+            background-size: 39px 39px;
+            background-position: center;
+            float: left;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .tab_item.disable {
+            cursor: default;
+        }
+
+    }/*#user.tab_item {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/0516/ico_vs_user_nor.png");
+            &:hover {
+                background-image: url("https://www.wiseapp.co.kr/resources/img/0516/ico_vs_user_foc.png");
+            }
+        }
+        #install.tab_item {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/0516/ico_vs_install_nor.png");
+            &:hover {
+                background-image: url("https://www.wiseapp.co.kr/resources/img/0516/ico_vs_install_foc.png");
+            }
+        }
+        #tot_time.tab_item {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/0516/ico_vs_totaltime_nor.png");
+            &:hover {
+                background-image: url("https://www.wiseapp.co.kr/resources/img/0516/ico_vs_totaltime_foc.png");
+            }
+        }
+        #avg_time.tab_item {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/0516/ico_vs_avgtime_nor.png");
+            &:hover {
+                background-image: url("https://www.wiseapp.co.kr/resources/img/0516/ico_vs_avgtime_foc.png");
+            }
+        }
+        #user.tab_item.selected {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/0516/ico_vs_user_foc.png");
+        }
+        #install.tab_item.selected {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/0516/ico_vs_install_foc.png");
+        }
+        #tot_time.tab_item.selected {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/0516/ico_vs_totaltime_foc.png");
+        }
+        #avg_time.tab_item.selected {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/0516/ico_vs_avgtime_foc.png");
+        }
+        #tot_time.tab_item.disable {
+            background-position: 0px 15px;
+            background-image: url("https://www.wiseapp.co.kr/resources/img/0912/ico_detail_totaltime_dim.png");
+        }
+        #avg_time.tab_item.disable {
+            background-position: 0px 15px;
+            background-image: url("https://www.wiseapp.co.kr/resources/img/0912/ico_detail_avgtime_dim.png");
+        }
+        #revenue.tab_item {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/190131/ic_retail_vs_amount_nor.png");
+            &:hover {
+                background-image: url("https://www.wiseapp.co.kr/resources/img/190131/ic_retail_vs_amount_foc.png");
+            }
+        }
+        #tot_payment_count.tab_item {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/190131/ic_retail_vs_number_nor.png");
+            &:hover {
+                background-image: url("https://www.wiseapp.co.kr/resources/img/190131/ic_retail_vs_number_foc.png");
+            }
+        }
+        #tot_used_user.tab_item {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/190131/ic_retail_vs_user_nor.png");
+            &:hover {
+                background-image: url("https://www.wiseapp.co.kr/resources/img/190131/ic_retail_vs_user_foc.png");
+            }
+        }
+        #revenue.tab_item.selected {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/190131/ic_retail_vs_amount_foc.png");
+        }
+        #tot_payment_count.tab_item.selected {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/190131/ic_retail_vs_number_foc.png");
+        }
+        #tot_used_user.tab_item.selected {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/190131/ic_retail_vs_user_foc.png");
+        }
+    }
+    #up_down_filter.disable {
+        .tab_item {
+            cursor: default;
+        }
+        #user.tab_item {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/0912/ico_detail_user_dim.png");
+        }
+        #install.tab_item {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/0912/ico_detail_install_dim.png");
+        }
+        #tot_time.tab_item {
+            background-position: 0px 15px;
+            background-image: url("https://www.wiseapp.co.kr/resources/img/0912/ico_detail_totaltime_dim.png");
+        }
+        #avg_time.tab_item {
+            background-position: 0px 15px;
+            background-image: url("https://www.wiseapp.co.kr/resources/img/0912/ico_detail_avgtime_dim.png");
+        }
+        #revenue.tab_item {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/190131/ic_retail_amount_dim.png");
+        }
+        #tot_payment_count.tab_item {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/190131/ic_retail_number_dim.png");
+        }
+        #tot_used_user.tab_item {
+            background-image: url("https://www.wiseapp.co.kr/resources/img/190131/ic_retail_user_dim.png");
+        }*/
+}
+#slider_wrapper {
+    position: absolute;
+    width: 528px;
+    right: 120px;
+    top: 14px;
+}

@@ -167,3 +167,10 @@ input {
         display: none;
     }
 }
+.clearfix {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
